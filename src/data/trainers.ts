@@ -565,7 +565,6 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [24, 26, 24],
     x: 4760,
     y: 2054,
-
   },
   {
     name: "Firebreather Richard",
@@ -858,5 +857,616 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [15, 30, 23],
     x: 7222,
     y: 1266,
+  },
+
+  // Lake of Rage
+  {
+    name: "Fisherman Andre",
+    numPokemon: 1,
+    pokemonLevels: [41],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Fisherman Raymond",
+    numPokemon: 4,
+    pokemonLevels: [33, 33, 33, 33],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Ace Trainer Lois",
+    numPokemon: 2,
+    pokemonLevels: [38, 38],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Ace Trainer Alton",
+    numPokemon: 3,
+    pokemonLevels: [36, 36, 36],
+    x: 0,
+    y: 0,
+  },
+
+  // Team Rocket HQ
+
+  // B1F
+  // TODO: These two are the statue grunts
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [26, 29],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    pokemonLevels: [24, 26, 27],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Scientist Gregg",
+    numPokemon: 3,
+    pokemonLevels: [30, 30, 30],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 4,
+    pokemonLevels: [24, 24, 24, 24],
+    x: 0,
+    y: 0,
+  },
+
+  // B2F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [27, 27],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    pokemonLevels: [27],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    pokemonLevels: [26, 26, 26],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt & Executive Ariana",
+    numPokemon: 5,
+    pokemonLevels: [38, 38, 41, 27, 30],
+    x: 0,
+    y: 0,
+  },
+
+  // B3F
+  {
+    name: "Scientist Ross",
+    numPokemon: 2,
+    pokemonLevels: [33, 33],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [27, 27],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Scientist Mitch",
+    numPokemon: 1,
+    pokemonLevels: [36],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    pokemonLevels: [29],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Executive Petrel",
+    numPokemon: 3,
+    pokemonLevels: [33, 33, 36],
+    x: 0,
+    y: 0,
+  },
+
+  // Radio Tower
+
+  // 1F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [36, 36],
+    x: 0,
+    y: 0,
+  },
+
+  // 2F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    pokemonLevels: [39],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 5,
+    pokemonLevels: [32, 32, 35, 35, 35],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [39, 39],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    pokemonLevels: [35, 35, 38],
+    x: 0,
+    y: 0,
+  },
+
+  // 3F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 4,
+    pokemonLevels: [35, 35, 35, 35],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Scientist Garett",
+    numPokemon: 3,
+    pokemonLevels: [41, 41, 41],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    pokemonLevels: [39],
+    x: 0,
+    y: 0,
+  },
+  // After Basement
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [36, 39],
+    x: 0,
+    y: 0,
+  },
+
+  // 4F
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    pokemonLevels: [33, 36, 33],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Scientist Trenton",
+    numPokemon: 1,
+    pokemonLevels: [45],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 4,
+    pokemonLevels: [32, 32, 35, 36],
+    x: 0,
+    y: 0,
+  },
+  // After Basement
+  {
+    name: "Executive Proton",
+    numPokemon: 2,
+    pokemonLevels: [42, 50],
+    x: 0,
+    y: 0,
+  },
+
+  // 5F
+  {
+    name: "Executive Petrel",
+    numPokemon: 6,
+    pokemonLevels: [45, 45, 45, 45, 48, 45],
+    x: 0,
+    y: 0,
+  },
+  // After Basement
+  {
+    name: "Executive Ariana",
+    numPokemon: 3,
+    pokemonLevels: [48, 48, 48],
+    x: 0,
+    y: 0,
+  },
+
+  // Observation Deck
+  {
+    name: "Executive Archer",
+    numPokemon: 6,
+    pokemonLevels: [53, 53, 57, 53, 53, 53],
+    x: 0,
+    y: 0,
+  },
+
+  // Rocket Goldenrod Basement
+  // Exterior
+  {
+    name: "Rival",
+    numPokemon: 5,
+    pokemonLevels: [48, 45, 45, 51, 51],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 1,
+    pokemonLevels: [41],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    pokemonLevels: [35, 35, 38],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Burglar Duncan",
+    numPokemon: 3,
+    pokemonLevels: [35, 35, 38],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Burglar Orson",
+    numPokemon: 2,
+    pokemonLevels: [39, 36],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [36, 36],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [38, 38],
+    x: 0,
+    y: 0,
+  },
+
+  // Interior
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [36, 36],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [38, 38],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [38, 38],
+    x: 0,
+    y: 0,
+  },
+
+  // Rt 44
+  {
+    name: "Psychic Phil",
+    numPokemon: 2,
+    pokemonLevels: [41, 44],
+    x: 7833,
+    y: 2053,
+  },
+  {
+    name: "Fisherman Edgar",
+    numPokemon: 2,
+    pokemonLevels: [42, 42],
+    x: 8121,
+    y: 21370,
+  },
+  {
+    name: "Ace Trainer Cybil",
+    numPokemon: 2,
+    pokemonLevels: [44, 44],
+    x: 8378,
+    y: 2154,
+  },
+  {
+    name: "Ace Trainer Allen",
+    numPokemon: 2,
+    pokemonLevels: [44, 44],
+    x: 8569,
+    y: 2151,
+  },
+  {
+    name: "Poké Maniac Zach",
+    numPokemon: 1,
+    pokemonLevels: [45],
+    x: 8554,
+    y: 1879,
+  },
+  {
+    name: "Fisherman Wilton",
+    numPokemon: 3,
+    pokemonLevels: [39, 39, 42],
+    x: 8424,
+    y: 1891,
+  },
+  {
+    name: "Bird Keeper Vance",
+    numPokemon: 2,
+    pokemonLevels: [42, 42],
+    x: 8970,
+    y: 1971,
+  },
+
+  // Rt 45
+  {
+    name: "Hiker Erik",
+    numPokemon: 3,
+    pokemonLevels: [36, 41, 41],
+    x: 9337,
+    y: 2582,
+  },
+  {
+    name: "Ace Trainer Ryan",
+    numPokemon: 2,
+    pokemonLevels: [38, 41],
+    x: 9483,
+    y: 2619,
+  },
+  {
+    name: "Ace Trainer Kelly",
+    numPokemon: 3,
+    pokemonLevels: [41, 36, 36],
+    x: 9355,
+    y: 2989,
+  },
+  {
+    name: "Hiker Parry",
+    numPokemon: 1,
+    pokemonLevels: [45],
+    x: 9193,
+    y: 2852,
+  },
+  {
+    name: "Black Belt Kenji",
+    numPokemon: 1,
+    pokemonLevels: [42],
+    x: 9432,
+    y: 3295,
+  },
+  {
+    name: "Hiker Timothy",
+    numPokemon: 2,
+    pokemonLevels: [41, 41],
+    x: 9354,
+    y: 3572,
+  },
+  {
+    name: "Hiker Michael",
+    numPokemon: 3,
+    pokemonLevels: [38, 38, 38],
+    x: 9481,
+    y: 3586,
+  },
+
+  // Rt 46
+  {
+    name: "Camper Ted",
+    numPokemon: 1,
+    pokemonLevels: [26],
+    x: 8681,
+    y: 4138,
+    spinner: true,
+  },
+  {
+    name: "Picknicker Erin",
+    numPokemon: 2,
+    pokemonLevels: [26, 21],
+    x: 8681,
+    y: 4187,
+  },
+  {
+    name: "Hiker Bailey",
+    numPokemon: 5,
+    pokemonLevels: [20, 20, 20, 20, 20],
+    x: 8890,
+    y: 4247,
+  },
+
+  // Dragon Den
+  {
+    name: "Ace Trainer Kobe",
+    numPokemon: 1,
+    pokemonLevels: [56],
+    x: 10209,
+    y: 812,
+  },
+  {
+    name: "Ace Trainer Piper",
+    numPokemon: 3,
+    pokemonLevels: [50, 50, 53],
+    x: 9919,
+    y: 945,
+  },
+  {
+    name: "Twins Clea & Gil",
+    numPokemon: 2,
+    pokemonLevels: [53, 53],
+    x: 9822,
+    y: 1082,
+  },
+
+  // Mt. Mortar
+  {
+    name: "Super Nerd Hugh",
+    numPokemon: 1,
+    pokemonLevels: [59],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Black Belt Kiyo",
+    numPokemon: 2,
+    pokemonLevels: [51, 51],
+    x: 6352,
+    y: 259,
+  },
+  {
+    name: "Super Nerd Markus",
+    numPokemon: 1,
+    pokemonLevels: [29],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Poké Maniac Harrison",
+    numPokemon: 2,
+    pokemonLevels: [26, 26],
+    x: 0,
+    y: 0,
+  },
+
+  // Rt 27
+  {
+    name: "Ace Trainer Megan",
+    numPokemon: 3,
+    pokemonLevels: [48, 48, 48],
+    x: 10954,
+    y: 4791,
+  },
+  {
+    name: "Ace Trainer Blake",
+    numPokemon: 3,
+    pokemonLevels: [50, 47, 47],
+    x: 11289,
+    y: 4803,
+  },
+  {
+    name: "Bird Keeper Jose",
+    numPokemon: 1,
+    pokemonLevels: [60],
+    x: 11467,
+    y: 4937,
+  },
+  {
+    name: "Ace Trainer Brian",
+    numPokemon: 1,
+    pokemonLevels: [53],
+    x: 11794,
+    y: 4826,
+    walker: true,
+  },
+  {
+    name: "Psychic Eli",
+    numPokemon: 3,
+    pokemonLevels: [45, 45, 51],
+    x: 12506,
+    y: 4839,
+  },
+  {
+    name: "Ace Trainer Reena",
+    numPokemon: 3,
+    pokemonLevels: [54, 50, 54],
+    x: 12826,
+    y: 4876,
+  },
+
+  // Rt 26
+  {
+    name: "Fisherman Scott",
+    numPokemon: 3,
+    pokemonLevels: [45, 45, 51],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Psychic Vernon",
+    numPokemon: 1,
+    pokemonLevels: [54],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Ace Trainer Joyce",
+    numPokemon: 2,
+    pokemonLevels: [54, 54],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Ace Trainer Gaven",
+    numPokemon: 3,
+    pokemonLevels: [48, 48, 48],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Ace Trainer Jake",
+    numPokemon: 3,
+    pokemonLevels: [50, 53, 50],
+    x: 0,
+    y: 0,
+  },
+  {
+    name: "Ace Trainer Jamie",
+    numPokemon: 2,
+    pokemonLevels: [54, 47],
+    x: 0,
+    y: 0,
+  },
+
+  // Victory Road
+  {
+    name: "Rival",
+    numPokemon: 6,
+    pokemonLevels: [54, 57, 56, 56, 56, 60],
+    x: 0,
+    y: 0,
   },
 ];
