@@ -1,0 +1,33 @@
+.ironmon-map {
+  height: 100%;
+  width: 100%;
+}
+
+.react-portal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.full-map-img,
+.svg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.full-map-img.pixelated {
+  image-rendering: pixelated;
+}
+
+.routes-visible {
+  display: block;
+}
+
+.routes-hidden {
+  display: none;
+}
