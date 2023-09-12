@@ -323,4 +323,333 @@ export const items: ItemData[] = [
     y: 4195,
     type: ItemType.Normal,
   },
+
+  // Rt 35
+  {
+    x: 4983,
+    y: 3834,
+    type: ItemType.TM,
+  },
+  {
+    x: 4622,
+    y: 3350,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4900,
+    y: 3339,
+    type: ItemType.Normal,
+  },
+
+  // Rt 36
+  {
+    x: 5158,
+    y: 2897,
+    type: ItemType.Hidden,
+  },
+
+  // National Park
+  {
+    x: 3590,
+    y: 4649,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3970,
+    y: 4095,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3127,
+    y: 4399,
+    type: ItemType.TM,
+  },
+  {
+    x: 3396,
+    y: 4453,
+    type: ItemType.Hidden,
+  },
+
+  // Pokeathalon
+  {
+    x: 4183,
+    y: 4990,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3667,
+    y: 5211,
+    type: ItemType.Hidden,
+  },
+
+  // Rt 36
+  {
+    x: 5192,
+    y: 2812,
+    type: ItemType.Normal,
+  },
+
+  // Ecruteak
+  {
+    x: 5403,
+    y: 1901,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5063,
+    y: 1990,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4974,
+    y: 1686,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4744,
+    y: 1917,
+    type: ItemType.Hidden,
+  },
+
+  // Burned Tower
+  // 1F
+  {
+    x: 4590,
+    y: 2039,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4650,
+    y: 2080,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4539,
+    y: 2262,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4524,
+    y: 2290,
+    type: ItemType.Normal,
+  },
+
+  // B1F
+  {
+    x: 4573,
+    y: 2352,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4495,
+    y: 2342,
+    type: ItemType.TM,
+  },
+  {
+    x: 4654,
+    y: 2561,
+    type: ItemType.Hidden,
+  },
+
+  // Rt 38
+  {
+    x: 4167,
+    y: 2078,
+    type: ItemType.Normal,
+  },
+
+  // Rt 39
+  {
+    x: 3046,
+    y: 2055,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3238,
+    y: 2104,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3155,
+    y: 2252,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3014,
+    y: 2201,
+    type: ItemType.TM,
+  },
+
+  // Olivine City
+  {
+    x: 3463,
+    y: 2748,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3317,
+    y: 3417,
+    type: ItemType.Hidden,
+  },
+
+  // Lighthouse
+  // 3F
+  {
+    x: 2794,
+    y: 2784,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 2934,
+    y: 2772,
+    type: ItemType.Normal,
+  },
+
+  // 3F Balcony
+  {
+    x: 2454,
+    y: 2621,
+    type: ItemType.Normal,
+  },
+
+  // 4F
+  {
+    x: 2746,
+    y: 2532,
+    type: ItemType.TM,
+  },
+
+  // 5F
+  {
+    x: 2885,
+    y: 2179,
+    type: ItemType.Normal,
+  },
+
+  // 6F
+  {
+    x: 2946,
+    y: 2006,
+    type: ItemType.Normal,
+  },
+
+  // TODO:
+  // Rt 40
+  // They have the same coords
+  {
+    x: 0,
+    y: 0,
+    type: ItemType.TM,
+  },
+  {
+    x: 0,
+    y: 0,
+    type: ItemType.Hidden,
+  },
+
+  // Cianwood City
+  {
+    x: 1573,
+    y: 4076,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 1874,
+    y: 4384,
+    type: ItemType.Hidden,
+  },
+
+  // Cliff Cave
+  {
+    x: 1455,
+    y: 3834,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 633,
+    y: 4774,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 753,
+    y: 4412,
+    type: ItemType.Normal,
+  },
+  {
+    x: 672,
+    y: 4490,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 163,
+    y: 4476,
+    type: ItemType.Hidden,
+  },
+  // TODO: is there an item missing at the very far left of cliff cave
+  {
+    x: 608,
+    y: 4257,
+    type: ItemType.Normal,
+  },
+  {
+    x: 163,
+    y: 3538,
+    type: ItemType.Normal,
+  },
+
+  // Safari Zone
+  {
+    x: 209,
+    y: 3159,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 339,
+    y: 3098,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 561,
+    y: 3085,
+    type: ItemType.Hidden,
+  },
+
+  // Bellchime Trail
+  {
+    x: 5050,
+    y: 1356,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5097,
+    y: 1356,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5193,
+    y: 1356,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5354,
+    y: 1403,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5450,
+    y: 1524,
+    type: ItemType.Hidden,
+  },
+
+  // Rt 42
+  {
+    x: 5789,
+    y: 1981,
+    type: ItemType.TM,
+  },
+  {
+    x: 6585,
+    y: 2137,
+    type: ItemType.Hidden,
+  },
 ];

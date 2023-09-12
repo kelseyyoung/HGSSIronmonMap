@@ -183,13 +183,14 @@ export const ControlPanel = () => {
         </div>
         <div className="control-panel-subtitle">Routes</div>
         <div className="checkbox-group">
-          <label className="checkbox-label">
+          <label className="checkbox-label disabled">
             <input
               type="checkbox"
               checked={showRoutes}
+              disabled={true}
               onChange={() => dispatch(setShowRoutes(!showRoutes))}
             />
-            Show Routes
+            Show Routes (Soon)
           </label>
         </div>
         <hr />
