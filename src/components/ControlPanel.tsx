@@ -254,9 +254,9 @@ export const ControlPanel = () => {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://www.vgmaps.com/Atlas/GBA/index.htm#PokemonFireRedVersion"
+              href="https://bulbapedia.bulbagarden.net/wiki/Appendix:HeartGold_and_SoulSilver_walkthrough"
             >
-              VGMaps
+              Bulbapedia
             </a>
           </div>
           <div>
@@ -264,28 +264,29 @@ export const ControlPanel = () => {
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://www.spriters-resource.com/game_boy_advance/pokemonfireredleafgreen/"
+              href="https://www.spriters-resource.com/ds_dsi/pokemonheartgoldsoulsilver/sheet/26955/"
             >
               The Spriters Resource
             </a>
           </div>
           <div>
-            Hidden item and map information from{" "}
+            Hidden item information from{" "}
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://imgur.com/a/vw7y5mp"
+              href="https://imgur.com/a/ohFwS3O"
             >
-              these
+              here
             </a>{" "}
+            and trainer information from{" "}
             <a
               rel="noreferrer"
               target="_blank"
-              href="https://imgur.com/a/DnDEi9i"
+              href="https://docs.google.com/spreadsheets/d/1eKixgsOxucM9M7kdA7QKsxqPhyO4CUtGbFgKjysCxxI/edit"
             >
-              two
-            </a>{" "}
-            imgur albums, from the Ironmon community
+              here
+            </a>
+            , from the Ironmon community
           </div>
         </div>
         <div className="dialog-text">
