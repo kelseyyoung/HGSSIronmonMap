@@ -46,7 +46,11 @@ export const items: ItemData[] = [
     y: 3222,
     type: ItemType.Normal,
   },
-  // TODO: missing item next to bug catcher
+  {
+    x: 7567,
+    y: 3376,
+    type: ItemType.Normal,
+  },
 
   // Violet City
   {
@@ -58,6 +62,16 @@ export const items: ItemData[] = [
     x: 6548,
     y: 2783,
     type: ItemType.Hidden,
+  },
+  {
+    x: 6907,
+    y: 2720,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6205,
+    y: 2597,
+    type: ItemType.Normal,
   },
 
   // Ruins of Alph
@@ -110,7 +124,11 @@ export const items: ItemData[] = [
     y: 3772,
     type: ItemType.Hidden,
   },
-  // TODO: missing item next to picknicker?
+  {
+    x: 6151,
+    y: 4120,
+    type: ItemType.Normal,
+  },
   {
     x: 6199,
     y: 4676,
@@ -267,6 +285,11 @@ export const items: ItemData[] = [
     y: 4561,
     type: ItemType.Hidden,
   },
+  {
+    x: 5113,
+    y: 4783,
+    type: ItemType.Hidden,
+  },
 
   // Rt 34
   {
@@ -278,6 +301,16 @@ export const items: ItemData[] = [
     x: 4857,
     y: 4733,
     type: ItemType.TM,
+  },
+  {
+    x: 4715,
+    y: 5295,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4733,
+    y: 5319,
+    type: ItemType.Normal,
   },
 
   // Goldenrod City
@@ -533,17 +566,15 @@ export const items: ItemData[] = [
     type: ItemType.Normal,
   },
 
-  // TODO:
   // Rt 40
-  // They have the same coords
   {
-    x: 0,
-    y: 0,
+    x: 2933,
+    y: 3618,
     type: ItemType.TM,
   },
   {
-    x: 0,
-    y: 0,
+    x: 2922,
+    y: 3629,
     type: ItemType.Hidden,
   },
 
@@ -652,4 +683,545 @@ export const items: ItemData[] = [
     y: 2137,
     type: ItemType.Hidden,
   },
+
+  // Lake of Rage
+  {
+    x: 7080,
+    y: 900,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 6738,
+    y: 791,
+    type: ItemType.Normal,
+  },
+  {
+    x: 7004,
+    y: 311,
+    type: ItemType.TM,
+  },
+  {
+    x: 7544,
+    y: 352,
+    type: ItemType.Normal,
+  },
+  {
+    x: 7577,
+    y: 340,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 7659,
+    y: 860,
+    type: ItemType.Hidden,
+  },
+
+  // Rocket Hideout
+
+  // B1F
+  {
+    x: 7275,
+    y: 2507,
+    type: ItemType.Normal,
+  },
+  {
+    x: 7467,
+    y: 2372,
+    type: ItemType.Normal,
+  },
+  {
+    x: 7483,
+    y: 2430,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 7114,
+    y: 2579,
+    type: ItemType.Normal,
+  },
+
+  // B2F
+  {
+    x: 7717,
+    y: 2582,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 8164,
+    y: 2404,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 7588,
+    y: 2449,
+    type: ItemType.TM,
+  },
+
+  // B3F
+  {
+    x: 8947,
+    y: 2415,
+    type: ItemType.Normal,
+  },
+  {
+    x: 8675,
+    y: 2277,
+    type: ItemType.TM,
+  },
+  {
+    x: 8372,
+    y: 2521,
+    type: ItemType.Normal,
+  },
+  {
+    x: 8338,
+    y: 2521,
+    type: ItemType.Normal,
+  },
+  {
+    x: 8595,
+    y: 2448,
+    type: ItemType.Normal,
+  },
+
+  // Whirl Islands
+
+  // Outside
+  {
+    x: 2292,
+    y: 4530,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 2694,
+    y: 4489,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 2791,
+    y: 4069,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 2758,
+    y: 4149,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 2158,
+    y: 4077,
+    type: ItemType.Hidden,
+  },
+
+  // Inside
+  // 1F
+  {
+    x: 2648,
+    y: 4854,
+    type: ItemType.Normal,
+  },
+  {
+    x: 2045,
+    y: 5730,
+    type: ItemType.Normal,
+  },
+  {
+    x: 2883,
+    y: 5596,
+    type: ItemType.Hidden,
+  },
+
+  // B1F
+  {
+    x: 1863,
+    y: 5392,
+    type: ItemType.Normal,
+  },
+  {
+    x: 2007,
+    y: 5070,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 1974,
+    y: 5281,
+    type: ItemType.Normal,
+  },
+  {
+    x: 2215,
+    y: 5121,
+    type: ItemType.Normal,
+  },
+  {
+    x: 2631,
+    y: 5044,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 2230,
+    y: 5552,
+    type: ItemType.Normal,
+  },
+  {
+    x: 2564,
+    y: 5499,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 2678,
+    y: 5419,
+    type: ItemType.Normal,
+  },
+
+  // B2F
+  {
+    x: 2958,
+    y: 5111,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3021,
+    y: 5049,
+    type: ItemType.Normal,
+  },
+
+  // Radio Tower
+  // Inside
+  {
+    x: 4516,
+    y: 2872,
+    type: ItemType.Normal,
+  },
+
+  // Basement
+  // Exterior
+  {
+    x: 3675,
+    y: 3603,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3578,
+    y: 3739,
+    type: ItemType.Normal,
+  },
+
+  // Interior
+  {
+    x: 4138,
+    y: 3597,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4234,
+    y: 3645,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4490,
+    y: 3792,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4474,
+    y: 3668,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4379,
+    y: 3692,
+    type: ItemType.TM,
+  },
+
+  // Bell Tower
+  {
+    x: 4079,
+    y: 1775,
+    type: ItemType.Normal,
+  },
+
+
+  // Rt 27
+  {
+    x: 11369,
+    y: 4938,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4232,
+    y: 1565,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4707,
+    y: 1689,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4755,
+    y: 1763,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4451,
+    y: 1726,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3457,
+    y: 1348,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3618,
+    y: 1364,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 3807,
+    y: 1309,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3695,
+    y: 1198,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4659,
+    y: 1394,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4627,
+    y: 1271,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4346,
+    y: 1199,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3837,
+    y: 824,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4696,
+    y: 1173,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4451,
+    y: 1173,
+    type: ItemType.Normal,
+  },
+
+  // Rt 44
+  {
+    x: 7933,
+    y: 2063,
+    type: ItemType.Normal,
+  },
+  {
+    x: 8331,
+    y: 2014,
+    type: ItemType.Normal,
+  },
+  {
+    x: 8711,
+    y: 1987,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 8616,
+    y: 1880,
+    type: ItemType.Normal,
+  },
+
+  // Ice Path
+  {
+    x: 8497,
+    y: 1300,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 8992,
+    y: 1132,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 8256,
+    y: 865,
+    type: ItemType.Normal,
+  },
+  {
+    x: 8592,
+    y: 1036,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 8416,
+    y: 903,
+    type: ItemType.Normal,
+  },
+  {
+    x: 9392,
+    y: 1382,
+    type: ItemType.Normal,
+  },
+  {
+    x: 9089,
+    y: 1013,
+    type: ItemType.TM,
+  },
+  {
+    x: 9409,
+    y: 1173,
+    type: ItemType.Normal,
+  },
+  {
+    x: 9441,
+    y: 1157,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 9073,
+    y: 1257,
+    type: ItemType.Normal,
+  },
+  {
+    x: 9072,
+    y: 1513,
+    type: ItemType.Normal,
+  },
+
+  // Dark Cave
+
+  // Blackthorn Side
+  {
+    x: 10364,
+    y: 2466,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 10268,
+    y: 2811,
+    type: ItemType.Normal,
+  },
+  {
+    x: 9821,
+    y: 2883,
+    type: ItemType.TM,
+  },
+  {
+    x: 9820,
+    y: 2366,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 9741,
+    y: 2916,
+    type: ItemType.Hidden,
+  },
+
+  // Violet City Side
+  {
+    x: 7641,
+    y: 2806,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 7608,
+    y: 2834,
+    type: ItemType.Normal,
+  },
+  {
+    x: 7720,
+    y: 2982,
+    type: ItemType.Normal,
+  },
+  {
+    x: 8265,
+    y: 2859,
+    type: ItemType.Normal,
+  },
+  {
+    x: 8389,
+    y: 2990,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 8344,
+    y: 3225,
+    type: ItemType.Normal,
+  },
+  {
+    x: 8184,
+    y: 3333,
+    type: ItemType.Normal,
+  },
+
+  // Rt 45
+  {
+    x: 9164,
+    y: 2652,
+    type: ItemType.Normal,
+  },
+  {
+    x: 9292,
+    y: 3198,
+    type: ItemType.Normal,
+  },
+  {
+    x: 9198,
+    y: 3355,
+    type: ItemType.Normal,
+  },
+  {
+    x: 9165,
+    y: 3604,
+    type: ItemType.Normal,
+  },
+  {
+    x: 9227,
+    y: 3454,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 9437,
+    y: 2855,
+    type: ItemType.Normal,
+  },
+
+  // Rt 46
+  {
+    x: 8620,
+    y: 4151,
+    type: ItemType.Normal,
+  },
+  {
+    x: 10244,
+    y: 1313,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 9857,
+    y: 982,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 9843,
+    y: 1127,
+    type: ItemType.Normal,
+  },
+
+  // Dragon's Den
+  {
+    x: 10402,
+    y: 907,
+    type: ItemType.Normal,
+  },
+
 ];

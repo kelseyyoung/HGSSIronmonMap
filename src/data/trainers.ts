@@ -289,6 +289,28 @@ export const trainers: TrainerData[] = [
     x: 4742,
     y: 4781,
   },
+  {
+    name: "Ace Trainer Irene",
+    numPokemon: 2,
+    pokemonLevels: [33, 36],
+    x: 4743,
+    y: 5729,
+  },
+  {
+    name: "Ace Trainer Jenn",
+    numPokemon: 2,
+    pokemonLevels: [36, 39],
+    x: 4904,
+    y: 5729,
+  },
+  {
+    name: "Ace Trainer Kate",
+    numPokemon: 2,
+    pokemonLevels: [39, 42],
+    x: 4824,
+    y: 5778,
+  },
+
 
   // Goldenrod Tunnel
   {
@@ -542,14 +564,14 @@ export const trainers: TrainerData[] = [
   },
 
   // Olivine City
-  {
-    name: "Beauty Charlotte",
-    numPokemon: 1,
-    pokemonLevels: [24],
-    // TODO:
-    x: 0,
-    y: 0,
-  },
+  // {
+  //   name: "Beauty Charlotte",
+  //   numPokemon: 1,
+  //   pokemonLevels: [24],
+  //   // TODO:
+  //   x: 0,
+  //   y: 0,
+  // },
 
   // Burned Tower
   {
@@ -864,62 +886,129 @@ export const trainers: TrainerData[] = [
     name: "Fisherman Andre",
     numPokemon: 1,
     pokemonLevels: [41],
-    x: 0,
-    y: 0,
+    x: 7458,
+    y: 858,
   },
   {
     name: "Fisherman Raymond",
     numPokemon: 4,
     pokemonLevels: [33, 33, 33, 33],
-    x: 0,
-    y: 0,
+    x: 7592,
+    y: 801,
   },
   {
     name: "Ace Trainer Lois",
     numPokemon: 2,
     pokemonLevels: [38, 38],
-    x: 0,
-    y: 0,
+    x: 7705,
+    y: 551,
   },
-  {
-    name: "Ace Trainer Alton",
-    numPokemon: 3,
-    pokemonLevels: [36, 36, 36],
-    x: 0,
-    y: 0,
-  },
+  // TODO: where this dude
+  // {
+  //   name: "Ace Trainer Alton",
+  //   numPokemon: 3,
+  //   pokemonLevels: [36, 36, 36],
+  //   x: 0,
+  //   y: 0,
+  // },
 
   // Team Rocket HQ
 
   // B1F
-  // TODO: These two are the statue grunts
+
+  // Statue 1
   {
     name: "Team Rocket Grunt",
     numPokemon: 2,
     pokemonLevels: [26, 29],
-    x: 0,
-    y: 0,
+    x: 7334,
+    y: 2267,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 3,
     pokemonLevels: [24, 26, 27],
-    x: 0,
-    y: 0,
+    x: 7334,
+    y: 2289,
   },
+
+  // Statue 2
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [26, 29],
+    x: 6918,
+    y: 2264,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    pokemonLevels: [24, 26, 27],
+    x: 6918,
+    y: 2288,
+  },
+
+  // Statue 3
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [26, 29],
+    x: 7335,
+    y: 2350,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    pokemonLevels: [24, 26, 27],
+    x: 7335,
+    y: 2373,
+  },
+
+  // Statue 4
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [26, 29],
+    x: 7334,
+    y: 2571,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    pokemonLevels: [24, 26, 27],
+    x: 7334,
+    y: 2596,
+  },
+
+  // Statue 5
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 2,
+    pokemonLevels: [26, 29],
+    x: 6917,
+    y: 2572,
+  },
+  {
+    name: "Team Rocket Grunt",
+    numPokemon: 3,
+    pokemonLevels: [24, 26, 27],
+    x: 6917,
+    y: 2597,
+  },
+
   {
     name: "Scientist Gregg",
     numPokemon: 3,
     pokemonLevels: [30, 30, 30],
-    x: 0,
-    y: 0,
+    x: 7206,
+    y: 2494,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 4,
     pokemonLevels: [24, 24, 24, 24],
-    x: 0,
-    y: 0,
+    x: 6823,
+    y: 2285,
   },
 
   // B2F
@@ -927,29 +1016,29 @@ export const trainers: TrainerData[] = [
     name: "Team Rocket Grunt",
     numPokemon: 2,
     pokemonLevels: [27, 27],
-    x: 0,
-    y: 0,
+    x: 8001,
+    y: 2529,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 1,
     pokemonLevels: [27],
-    x: 0,
-    y: 0,
+    x: 8160,
+    y: 2524,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 3,
     pokemonLevels: [26, 26, 26],
-    x: 0,
-    y: 0,
+    x: 7601,
+    y: 2251,
   },
   {
     name: "Team Rocket Grunt & Executive Ariana",
     numPokemon: 5,
     pokemonLevels: [38, 38, 41, 27, 30],
-    x: 0,
-    y: 0,
+    x: 7878,
+    y: 2499,
   },
 
   // B3F
@@ -957,36 +1046,36 @@ export const trainers: TrainerData[] = [
     name: "Scientist Ross",
     numPokemon: 2,
     pokemonLevels: [33, 33],
-    x: 0,
-    y: 0,
+    x: 8830,
+    y: 2436,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 2,
     pokemonLevels: [27, 27],
-    x: 0,
-    y: 0,
+    x: 8768,
+    y: 2398,
   },
   {
     name: "Scientist Mitch",
     numPokemon: 1,
     pokemonLevels: [36],
-    x: 0,
-    y: 0,
+    x: 8510,
+    y: 2559,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 1,
     pokemonLevels: [29],
-    x: 0,
-    y: 0,
+    x: 8400,
+    y: 2524,
   },
   {
     name: "Executive Petrel",
     numPokemon: 3,
     pokemonLevels: [33, 33, 36],
-    x: 0,
-    y: 0,
+    x: 8495,
+    y: 2300,
   },
 
   // Radio Tower
@@ -996,8 +1085,8 @@ export const trainers: TrainerData[] = [
     name: "Team Rocket Grunt",
     numPokemon: 2,
     pokemonLevels: [36, 36],
-    x: 0,
-    y: 0,
+    x: 4480,
+    y: 3366,
   },
 
   // 2F
@@ -1005,29 +1094,30 @@ export const trainers: TrainerData[] = [
     name: "Team Rocket Grunt",
     numPokemon: 1,
     pokemonLevels: [39],
-    x: 0,
-    y: 0,
+    x: 4334,
+    y: 3273,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 5,
     pokemonLevels: [32, 32, 35, 35, 35],
-    x: 0,
-    y: 0,
+    x: 4319,
+    y: 3188,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 2,
     pokemonLevels: [39, 39],
-    x: 0,
-    y: 0,
+    x: 4225,
+    y: 3252,
+    spinner: true,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 3,
     pokemonLevels: [35, 35, 38],
-    x: 0,
-    y: 0,
+    x: 4158,
+    y: 3301,
   },
 
   // 3F
@@ -1035,30 +1125,30 @@ export const trainers: TrainerData[] = [
     name: "Team Rocket Grunt",
     numPokemon: 4,
     pokemonLevels: [35, 35, 35, 35],
-    x: 0,
-    y: 0,
+    x: 4254,
+    y: 3011,
   },
   {
     name: "Scientist Garett",
     numPokemon: 3,
     pokemonLevels: [41, 41, 41],
-    x: 0,
-    y: 0,
+    x: 4321,
+    y: 3124,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 1,
     pokemonLevels: [39],
-    x: 0,
-    y: 0,
+    x: 4384,
+    y: 3097,
   },
   // After Basement
   {
     name: "Team Rocket Grunt",
     numPokemon: 2,
     pokemonLevels: [36, 39],
-    x: 0,
-    y: 0,
+    x: 4444,
+    y: 3034,
   },
 
   // 4F
@@ -1066,30 +1156,30 @@ export const trainers: TrainerData[] = [
     name: "Team Rocket Grunt",
     numPokemon: 3,
     pokemonLevels: [33, 36, 33],
-    x: 0,
-    y: 0,
+    x: 4243,
+    y: 2832,
   },
   {
     name: "Scientist Trenton",
     numPokemon: 1,
     pokemonLevels: [45],
-    x: 0,
-    y: 0,
+    x: 4171,
+    y: 2887,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 4,
     pokemonLevels: [32, 32, 35, 36],
-    x: 0,
-    y: 0,
+    x: 4496,
+    y: 2910,
   },
   // After Basement
   {
     name: "Executive Proton",
     numPokemon: 2,
     pokemonLevels: [42, 50],
-    x: 0,
-    y: 0,
+    x: 4477,
+    y: 2868,
   },
 
   // 5F
@@ -1097,16 +1187,16 @@ export const trainers: TrainerData[] = [
     name: "Executive Petrel",
     numPokemon: 6,
     pokemonLevels: [45, 45, 45, 45, 48, 45],
-    x: 0,
-    y: 0,
+    x: 4229,
+    y: 2757,
   },
   // After Basement
   {
     name: "Executive Ariana",
     numPokemon: 3,
     pokemonLevels: [48, 48, 48],
-    x: 0,
-    y: 0,
+    x: 4325,
+    y: 2640,
   },
 
   // Observation Deck
@@ -1114,8 +1204,8 @@ export const trainers: TrainerData[] = [
     name: "Executive Archer",
     numPokemon: 6,
     pokemonLevels: [53, 53, 57, 53, 53, 53],
-    x: 0,
-    y: 0,
+    x: 4330,
+    y: 2389,
   },
 
   // Rocket Goldenrod Basement
@@ -1124,50 +1214,50 @@ export const trainers: TrainerData[] = [
     name: "Rival",
     numPokemon: 5,
     pokemonLevels: [48, 45, 45, 51, 51],
-    x: 0,
-    y: 0,
+    x: 3863,
+    y: 3602,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 1,
     pokemonLevels: [41],
-    x: 0,
-    y: 0,
+    x: 3864,
+    y: 3656,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 3,
     pokemonLevels: [35, 35, 38],
-    x: 0,
-    y: 0,
+    x: 3830,
+    y: 3589,
   },
   {
     name: "Burglar Duncan",
     numPokemon: 3,
     pokemonLevels: [35, 35, 38],
-    x: 0,
-    y: 0,
+    x: 3671,
+    y: 3726,
   },
   {
     name: "Burglar Orson",
     numPokemon: 2,
     pokemonLevels: [39, 36],
-    x: 0,
-    y: 0,
+    x: 3638,
+    y: 3649,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 2,
     pokemonLevels: [36, 36],
-    x: 0,
-    y: 0,
+    x: 3607,
+    y: 3591,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 2,
     pokemonLevels: [38, 38],
-    x: 0,
-    y: 0,
+    x: 3942,
+    y: 3728,
   },
 
   // Interior
@@ -1175,22 +1265,23 @@ export const trainers: TrainerData[] = [
     name: "Team Rocket Grunt",
     numPokemon: 2,
     pokemonLevels: [36, 36],
-    x: 0,
-    y: 0,
+    x: 4298,
+    y: 3740,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 2,
     pokemonLevels: [38, 38],
-    x: 0,
-    y: 0,
+    x: 4486,
+    y: 3645,
+    walker: true,
   },
   {
     name: "Team Rocket Grunt",
     numPokemon: 2,
     pokemonLevels: [38, 38],
-    x: 0,
-    y: 0,
+    x: 4310,
+    y: 3557,
   },
 
   // Rt 44
