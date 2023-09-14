@@ -18,7 +18,6 @@ import {
 export const ControlPanel = () => {
   const {
     showTrainerData,
-    showItemData,
     highlightItems,
     highlightTMs,
     highlightHiddenItems,
@@ -29,7 +28,6 @@ export const ControlPanel = () => {
   } = useAppSelector((state) => state.settings);
   const {
     setShowTrainerData,
-    setShowItemData,
     setHighlightItems,
     setHighlightTMs,
     setHighlightHiddenItems,
@@ -69,6 +67,7 @@ export const ControlPanel = () => {
             <Icon fontSize="small">{collapsed ? "add" : "remove"}</Icon>
           </button>
         </div>
+        <div className="control-panel-subtitle">🚧 Under Construction 🚧</div>
         <div className="control-panel-subtitle">Trainer/Item Info</div>
         <div className="checkbox-group">
           <label className="checkbox-label">
@@ -78,16 +77,6 @@ export const ControlPanel = () => {
               onChange={() => dispatch(setShowTrainerData(!showTrainerData))}
             />
             Show Trainer Data
-          </label>
-        </div>
-        <div className="checkbox-group">
-          <label className="checkbox-label">
-            <input
-              type="checkbox"
-              checked={showItemData}
-              onChange={() => dispatch(setShowItemData(!showItemData))}
-            />
-            Show Item Data
           </label>
         </div>
         <div className="control-panel-subtitle">Highlight Items</div>

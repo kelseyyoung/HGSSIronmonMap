@@ -18,6 +18,13 @@ export const items: ItemData[] = [
     type: ItemType.Normal,
   },
 
+  // Cherrygrove
+  {
+    x: 7202,
+    y: 4680,
+    type: ItemType.Hidden,
+  },
+
   // Rt 30
   {
     x: 7998,
@@ -89,6 +96,11 @@ export const items: ItemData[] = [
     x: 5872,
     y: 3608,
     type: ItemType.Hidden,
+  },
+  {
+    x: 5487,
+    y: 3329,
+    type: ItemType.Normal,
   },
 
   // Sprout Tower
@@ -627,6 +639,11 @@ export const items: ItemData[] = [
     y: 3538,
     type: ItemType.Normal,
   },
+  {
+    x: 128,
+    y: 3986,
+    type: ItemType.Normal,
+  },
 
   // Safari Zone
   {
@@ -647,28 +664,28 @@ export const items: ItemData[] = [
 
   // Bellchime Trail
   {
-    x: 5050,
-    y: 1356,
+    x: 2834,
+    y: 1542,
     type: ItemType.Hidden,
   },
   {
-    x: 5097,
-    y: 1356,
+    x: 2880,
+    y: 1541,
     type: ItemType.Hidden,
   },
   {
-    x: 5193,
-    y: 1356,
+    x: 2976,
+    y: 1540,
     type: ItemType.Hidden,
   },
   {
-    x: 5354,
-    y: 1403,
+    x: 3137,
+    y: 1590,
     type: ItemType.Hidden,
   },
   {
-    x: 5450,
-    y: 1524,
+    x: 3234,
+    y: 1711,
     type: ItemType.Hidden,
   },
 
@@ -937,14 +954,6 @@ export const items: ItemData[] = [
   {
     x: 4079,
     y: 1775,
-    type: ItemType.Normal,
-  },
-
-
-  // Rt 27
-  {
-    x: 11369,
-    y: 4938,
     type: ItemType.Normal,
   },
   {
@@ -1222,6 +1231,302 @@ export const items: ItemData[] = [
     x: 10402,
     y: 907,
     type: ItemType.Normal,
+  },
+  {
+    x: 10531,
+    y: 1118,
+    type: ItemType.Normal,
+  },
+
+  // Mt. Mortar
+
+  // Entrance
+  {
+    x: 6795,
+    y: 1526,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6266,
+    y: 1339,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6154,
+    y: 1723,
+    type: ItemType.Hidden,
+  },
+
+  // Basement
+  {
+    x: 5327,
+    y: 877,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5231,
+    y: 652,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5135,
+    y: 579,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4768,
+    y: 998,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4672,
+    y: 814,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5072,
+    y: 912,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5024,
+    y: 240,
+    type: ItemType.Hidden,
+  },
+
+  // Upper Cave
+  {
+    x: 5094,
+    y: 1673,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5718,
+    y: 1452,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5668,
+    y: 1586,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5846,
+    y: 1351,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5542,
+    y: 1466,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5462,
+    y: 1405,
+    type: ItemType.TM,
+  },
+  {
+    x: 5717,
+    y: 1171,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5429,
+    y: 1159,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5253,
+    y: 1292,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5255,
+    y: 1219,
+    type: ItemType.Hidden,
+  },
+
+  // Lower Cave
+  {
+    x: 5913,
+    y: 229,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5690,
+    y: 229,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5594,
+    y: 426,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6042,
+    y: 355,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6297,
+    y: 339,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6297,
+    y: 681,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6088,
+    y: 862,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 6041,
+    y: 555,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5817,
+    y: 644,
+    type: ItemType.Normal,
+  },
+
+  // Rt 27
+  {
+    x: 11369,
+    y: 4938,
+    type: ItemType.Normal,
+  },
+  {
+    x: 10682,
+    y: 4513,
+    type: ItemType.Normal,
+  },
+  {
+    x: 12329,
+    y: 4757,
+    type: ItemType.Normal,
+  },
+  {
+    x: 12574,
+    y: 4748,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 11529,
+    y: 4937,
+    type: ItemType.TM,
+  },
+  {
+    x: 13089,
+    y: 4952,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 12957,
+    y: 4798,
+    type: ItemType.Hidden,
+  },
+
+  // Rt 26
+  {
+    x: 13634,
+    y: 3452,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 13427,
+    y: 3389,
+    type: ItemType.Normal,
+  },
+
+  // Victory Road
+  {
+    x: 12999,
+    y: 4353,
+    type: ItemType.Normal,
+  },
+  {
+    x: 12743,
+    y: 4261,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 12886,
+    y: 4264,
+    type: ItemType.Normal,
+  },
+  {
+    x: 12616,
+    y: 4263,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 12921,
+    y: 4023,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 12871,
+    y: 4034,
+    type: ItemType.Normal,
+  },
+  {
+    x: 12379,
+    y: 3547,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 13105,
+    y: 3193,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 13050,
+    y: 3734,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 12843,
+    y: 3511,
+    type: ItemType.Normal,
+  },
+  {
+    x: 12896,
+    y: 2923,
+    type: ItemType.Normal,
+  },
+  {
+    x: 12586,
+    y: 3673,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 12634,
+    y: 3649,
+    type: ItemType.Normal,
+  },
+  {
+    x: 12560,
+    y: 2884,
+    type: ItemType.Normal,
+  },
+  {
+    x: 12348,
+    y: 3523,
+    type: ItemType.TM,
+  },
+  {
+    x: 12689,
+    y: 3146,
+    type: ItemType.TM,
+  },
+  {
+    x: 13394,
+    y: 2799,
+    type: ItemType.Hidden,
   },
 
 ];

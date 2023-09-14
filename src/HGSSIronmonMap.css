@@ -31,3 +31,10 @@
 .routes-hidden {
   display: none;
 }
+
+.region-selector {
+  position: fixed;
+  top: 10px;
+  left: 200px;
+  z-index: 1002;
+}
