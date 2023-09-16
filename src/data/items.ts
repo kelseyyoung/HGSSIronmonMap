@@ -1216,11 +1216,6 @@ export const items: ItemData[] = [
     type: ItemType.Hidden,
   },
   {
-    x: 9857,
-    y: 982,
-    type: ItemType.Hidden,
-  },
-  {
     x: 9843,
     y: 1127,
     type: ItemType.Normal,
@@ -1236,6 +1231,16 @@ export const items: ItemData[] = [
     x: 10531,
     y: 1118,
     type: ItemType.Normal,
+  },
+  {
+    x: 9857,
+    y: 982,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 9954,
+    y: 846,
+    type: ItemType.Hidden,
   },
 
   // Mt. Mortar
@@ -1464,11 +1469,6 @@ export const items: ItemData[] = [
     type: ItemType.Hidden,
   },
   {
-    x: 12921,
-    y: 4023,
-    type: ItemType.Hidden,
-  },
-  {
     x: 12871,
     y: 4034,
     type: ItemType.Normal,
@@ -1526,6 +1526,11 @@ export const items: ItemData[] = [
   {
     x: 13394,
     y: 2799,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 12849,
+    y: 2910,
     type: ItemType.Hidden,
   },
 
