@@ -4,18 +4,27 @@ import "./HGSSIronmonMap.css";
 import { MapInteractionCSS } from "react-map-interaction";
 import { ControlPanel } from "./components";
 import {
-  items,
-  trainers,
-  portalGroups,
+  items as johtoItems,
+  trainers as johtoTrainers,
+  // kantoTrainers,
+  portalGroups as johtoPortals,
   defaultItemHeight,
   defaultItemWidth,
   defaultPortalSize,
   defaultTrainerHeight,
   defaultTrainerWidth,
 } from "./data";
-import { BoundingBoxCoords, Item, MapPortal, Trainer } from "./IronmonMapUtils";
+import {
+  BoundingBoxCoords,
+  Item,
+  ItemData,
+  MapPortal,
+  MapPortalGroup,
+  Trainer,
+  TrainerData,
+} from "./IronmonMapUtils";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
-import { styled } from '@mui/material/styles';
+import { styled } from "@mui/material/styles";
 // import { useAppSelector } from "./IronmonMapUtils/state";
 
 export interface MapInteractionCSSValue {
@@ -29,20 +38,31 @@ export interface MapInteractionCSSValue {
   // Move map "left": decrease x
 }
 
+type RegionData = {
+  name: "johto" | "kanto";
+  trainers: TrainerData[];
+  items: ItemData[];
+  mapName: string;
+  mapHeight: number;
+  mapWidth: number;
+  portals: MapPortalGroup[];
+  // TODO: route pictures and sizes
+};
+
 const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
-  '& .MuiToggleButtonGroup-grouped': {
-    backgroundColor: 'rgba(255, 255, 255, 0.8)',
-    color: 'black',
-    fontWeight: 'bold',
-    '&.Mui-selected': {
-      backgroundColor: '#d66851'
+  "& .MuiToggleButtonGroup-grouped": {
+    backgroundColor: "rgba(255, 255, 255, 0.8)",
+    color: "black",
+    fontWeight: "bold",
+    "&.Mui-selected": {
+      backgroundColor: "#d66851",
     },
-    '&.Mui-selected:hover': {
-      backgroundColor: '#d66851',
-      textDecoration: 'underline'
+    "&.Mui-selected:hover": {
+      backgroundColor: "#d66851",
+      textDecoration: "underline",
     },
-    '&.Mui-disabled': {
-      color: '#888'
+    "&.Mui-disabled": {
+      color: "#888",
     },
   },
 }));
@@ -50,13 +70,51 @@ const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
 export const HGSSIronmonMap = () => {
   const [mapData, setMapData] = React.useState<MapInteractionCSSValue>({
     scale: 1,
+    // Start kinda in the middle of Johto, the map doesn't have anything in the top left corner
     translation: { x: -5000, y: -2000 },
   });
 
-  const [currRegion, setCurrRegion] = React.useState<'johto' | 'kanto'>('johto');
-  const handleRegionChange = (event: React.MouseEvent<HTMLElement>, newRegion: 'johto' | 'kanto') => {
-    setCurrRegion(newRegion)
-  }
+  // Initial state of things, default is Johto
+  const [regionData, setRegionData] = React.useState<RegionData>({
+    name: "johto",
+    trainers: johtoTrainers,
+    items: johtoItems,
+    mapName: FullJohto,
+    mapHeight: 5893,
+    mapWidth: 13712,
+    portals: johtoPortals,
+  });
+
+  const handleRegionChange = (
+    event: React.MouseEvent<HTMLElement>,
+    newRegion: "johto" | "kanto"
+  ) => {
+    // Toggle trainers, itens, portals, images, image sizes
+    if (newRegion === "johto") {
+      // Johto
+      setRegionData({
+        name: "johto",
+        trainers: johtoTrainers,
+        items: johtoItems,
+        mapName: FullJohto,
+        mapHeight: 5893,
+        mapWidth: 13712,
+        portals: johtoPortals,
+      });
+    } else {
+      // Kanto
+      // setRegionData({
+      //   name: "kanto",
+      //   trainers: kantoTrainers,
+      //   items: ,
+      //   mapName: ,
+      //   mapHeight: ,
+      //   mapWidth: ,
+      // });
+    }
+
+    // TODO: reset pan location of map?
+  };
 
   // const showRoutes = useAppSelector((state) => state.settings).showRoutes;
 
@@ -78,9 +136,16 @@ export const HGSSIronmonMap = () => {
   return (
     <div className="ironmon-map">
       <ControlPanel />
-      <StyledToggleButtonGroup className="region-selector" exclusive value={currRegion} onChange={handleRegionChange}>
-        <ToggleButton value='johto'>Johto</ToggleButton>
-        <ToggleButton value='kanto' disabled>Kanto (Coming Soon)</ToggleButton>
+      <StyledToggleButtonGroup
+        className="region-selector"
+        exclusive
+        value={regionData.name}
+        onChange={handleRegionChange}
+      >
+        <ToggleButton value="johto">Johto</ToggleButton>
+        <ToggleButton value="kanto" disabled>
+          Kanto (Coming Soon)
+        </ToggleButton>
       </StyledToggleButtonGroup>
       <MapInteractionCSS
         value={mapData}
@@ -97,9 +162,9 @@ export const HGSSIronmonMap = () => {
         {/* TODO: can we get the height and width from the image? Think "FullKanto" is just the string though */}
         {/* if so, then put into variables */}
         <img
-          width="13712"
-          height="5893"
-          src={FullJohto}
+          width={regionData.mapWidth}
+          height={regionData.mapHeight}
+          src={regionData.mapName}
           alt="Full Johto"
           className="pixelated full-map-img"
         ></img>
@@ -116,11 +181,11 @@ export const HGSSIronmonMap = () => {
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
-          width="13712"
-          height="5893"
+          width={regionData.mapWidth}
+          height={regionData.mapHeight}
           className="svg-container"
         >
-          {trainers.map((trainer, index) => {
+          {regionData.trainers.map((trainer, index) => {
             return (
               <Trainer
                 key={trainer.name.split(" ").join("") + "-" + index}
@@ -130,7 +195,7 @@ export const HGSSIronmonMap = () => {
               />
             );
           })}
-          {items.map((item, index) => {
+          {regionData.items.map((item, index) => {
             return (
               <Item
                 key={"item-" + index}
@@ -140,7 +205,7 @@ export const HGSSIronmonMap = () => {
               />
             );
           })}
-          {portalGroups.map((portalGroup) => {
+          {regionData.portals.map((portalGroup) => {
             return portalGroup.portals.map((portal, portalIndex) => (
               <MapPortal
                 key={"portal-" + portalIndex}
