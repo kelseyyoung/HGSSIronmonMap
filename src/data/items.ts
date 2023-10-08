@@ -1534,4 +1534,10 @@ export const items: ItemData[] = [
     type: ItemType.Hidden,
   },
 
+  // Frontier Access
+  {
+    x: 2539,
+    y: 3160,
+    type: ItemType.Hidden,
+  },
 ];

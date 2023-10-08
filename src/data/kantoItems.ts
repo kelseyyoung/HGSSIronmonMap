@@ -13,7 +13,7 @@ export const kantoItems: ItemData[] = [
     type: ItemType.Hidden,
   },
   {
-    x: 7790,
+    x: 7786,
     y: 4057,
     type: ItemType.Hidden,
   },
@@ -31,6 +31,11 @@ export const kantoItems: ItemData[] = [
     x: 7737,
     y: 4202,
     type: ItemType.Hidden,
+  },
+  {
+    x: 8074,
+    y: 4096,
+    type: ItemType.Normal,
   },
 
   // Route 6
@@ -219,6 +224,11 @@ export const kantoItems: ItemData[] = [
     y: 1307,
     type: ItemType.Hidden,
   },
+  {
+    x: 3120,
+    y: 1092,
+    type: ItemType.Normal,
+  },
 
   // Viridian City
   {
@@ -253,7 +263,7 @@ export const kantoItems: ItemData[] = [
     type: ItemType.Hidden,
   },
 
-  // Viridian City
+  // Viridian City/Forest
   {
     x: 4270,
     y: 2471,
@@ -289,6 +299,26 @@ export const kantoItems: ItemData[] = [
     y: 1820,
     type: ItemType.Hidden,
   },
+  {
+    x: 3786,
+    y: 2305,
+    type: ItemType.Normal,
+  },
+  {
+    x: 4278,
+    y: 2501,
+    type: ItemType.TM,
+  },
+  {
+    x: 4148,
+    y: 2025,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3837,
+    y: 1796,
+    type: ItemType.Normal,
+  },
 
   // Route 3
   {
@@ -306,6 +336,11 @@ export const kantoItems: ItemData[] = [
     y: 1251,
     type: ItemType.Hidden,
   },
+  {
+    x: 4696,
+    y: 1482,
+    type: ItemType.Normal,
+  },
 
   // Route 4
   {
@@ -318,12 +353,22 @@ export const kantoItems: ItemData[] = [
     y: 1135,
     type: ItemType.Hidden,
   },
+  {
+    x: 6853,
+    y: 881,
+    type: ItemType.Normal,
+  },
 
   // Route 11
   {
     x: 8672,
     y: 3609,
     type: ItemType.Hidden,
+  },
+  {
+    x: 9019,
+    y: 3607,
+    type: ItemType.TM,
   },
 
   // Route 12
@@ -336,15 +381,14 @@ export const kantoItems: ItemData[] = [
   // Route 13
   {
     x: 8778,
-    y: 4925,
+    y: 4919,
     type: ItemType.Hidden,
   },
 
-  // Cycling Road
-  // TODO: this might be in the wrong place
+  // Route 17/Cycling Road
   {
     x: 4782,
-    y: 4605,
+    y: 4621,
     type: ItemType.Hidden,
   },
   {
@@ -374,20 +418,25 @@ export const kantoItems: ItemData[] = [
     y: 6296,
     type: ItemType.Hidden,
   },
-
-  // Route 20
   {
     x: 6017,
-    y: 6886,
+    y: 6884,
+    type: ItemType.TM,
+  },
+  {
+    x: 6002,
+    y: 6896,
     type: ItemType.Hidden,
   },
+
+  // Route 20
   {
     x: 4833,
     y: 6852,
     type: ItemType.Hidden,
   },
   {
-    x: 4358,
+    x: 4364,
     y: 6566,
     type: ItemType.Hidden,
   },
@@ -399,8 +448,8 @@ export const kantoItems: ItemData[] = [
 
   // Route 21
   {
-    x: 3244,
-    y: 5878,
+    x: 3247,
+    y: 5867,
     type: ItemType.Hidden,
   },
   {
@@ -409,8 +458,8 @@ export const kantoItems: ItemData[] = [
     type: ItemType.Hidden,
   },
   {
-    x: 3364,
-    y: 5496,
+    x: 3357,
+    y: 5494,
     type: ItemType.Hidden,
   },
 
@@ -425,7 +474,7 @@ export const kantoItems: ItemData[] = [
   // B1F
   {
     x: 4023,
-    y: 6083,
+    y: 6076,
     type: ItemType.Hidden,
   },
   {
@@ -557,6 +606,244 @@ export const kantoItems: ItemData[] = [
   {
     x: 6330,
     y: 657,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 6235,
+    y: 584,
+    type: ItemType.Normal,
+  },
+  {
+    x: 6316,
+    y: 459,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5707,
+    y: 395,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5739,
+    y: 485,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5803,
+    y: 571,
+    type: ItemType.Normal,
+  },
+
+  // B1F
+  {
+    x: 4819,
+    y: 371,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 4675,
+    y: 610,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5043,
+    y: 558,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5015,
+    y: 478,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 5091,
+    y: 298,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5523,
+    y: 323,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5507,
+    y: 719,
+    type: ItemType.Normal,
+  },
+  {
+    x: 5220,
+    y: 371,
+    type: ItemType.Hidden,
+  },
+
+  // Route 28
+  {
+    x: 1183,
+    y: 3471,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 436,
+    y: 3471,
+    type: ItemType.Hidden,
+  },
+
+  // Mt. Silver
+  // 1F
+  {
+    x: 807,
+    y: 3013,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 247,
+    y: 2919,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 807,
+    y: 2649,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 950,
+    y: 2607,
+    type: ItemType.Normal,
+  },
+  {
+    x: 1199,
+    y: 2606,
+    type: ItemType.Normal,
+  },
+  {
+    x: 344,
+    y: 2141,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 88,
+    y: 2141,
+    type: ItemType.Hidden,
+  },
+
+  // 2F
+  {
+    x: 702,
+    y: 2387,
+    type: ItemType.Normal,
+  },
+  {
+    x: 702,
+    y: 2106,
+    type: ItemType.Normal,
+  },
+  {
+    x: 830,
+    y: 2038,
+    type: ItemType.Normal,
+  },
+  {
+    x: 1022,
+    y: 2140,
+    type: ItemType.Normal,
+  },
+  {
+    x: 462,
+    y: 2162,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 1038,
+    y: 1953,
+    type: ItemType.Hidden,
+  },
+
+  // Lower Mountainside
+  {
+    x: 1262,
+    y: 3146,
+    type: ItemType.TM,
+  },
+  {
+    x: 1454,
+    y: 3221,
+    type: ItemType.Normal,
+  },
+
+  // Upper Mountainside
+  {
+    x: 1601,
+    y: 2029,
+    type: ItemType.Normal,
+  },
+  {
+    x: 1265,
+    y: 2009,
+    type: ItemType.Normal,
+  },
+  {
+    x: 1474,
+    y: 1723,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 1554,
+    y: 2017,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 1426,
+    y: 2010,
+    type: ItemType.Hidden,
+  },
+
+  // 3F
+  {
+    x: 686,
+    y: 1541,
+    type: ItemType.Hidden,
+  },
+
+  // Route 12
+  {
+    x: 9163,
+    y: 4198,
+    type: ItemType.Normal,
+  },
+  {
+    x: 9183,
+    y: 4438,
+    type: ItemType.Normal,
+  },
+
+  // Route 2
+  {
+    x: 3501,
+    y: 1558,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3378,
+    y: 2888,
+    type: ItemType.Normal,
+  },
+
+  // Route 15
+  {
+    x: 6806,
+    y: 5660,
+    type: ItemType.Normal,
+  },
+  {
+    x: 7228,
+    y: 5835,
+    type: ItemType.Normal,
+  },
+
+  // Mt. Moon Square
+  {
+    x: 5526,
+    y: 796,
     type: ItemType.Hidden,
   },
 ];

@@ -38,3 +38,24 @@
   left: 200px;
   z-index: 1002;
 }
+
+.loading-overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1003;
+  background-color: rgba(255, 255, 255, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-overlay.visible {
+  display: flex;
+}
+
+.loading-overlay .loading-label {
+  margin-left: 25px;
+}

@@ -1,18 +1,20 @@
-import React from "react";
+import React, { SyntheticEvent } from "react";
 import FullJohto from "./assets/FullJohto.webp";
+import FullKanto from "./assets/FullKanto.webp";
 import "./HGSSIronmonMap.css";
 import { MapInteractionCSS } from "react-map-interaction";
 import { ControlPanel } from "./components";
 import {
   items as johtoItems,
   trainers as johtoTrainers,
-  // kantoTrainers,
+  kantoTrainers,
   portalGroups as johtoPortals,
   defaultItemHeight,
   defaultItemWidth,
   defaultPortalSize,
   defaultTrainerHeight,
   defaultTrainerWidth,
+  kantoItems,
 } from "./data";
 import {
   BoundingBoxCoords,
@@ -23,7 +25,11 @@ import {
   Trainer,
   TrainerData,
 } from "./IronmonMapUtils";
-import { ToggleButton, ToggleButtonGroup } from "@mui/material";
+import {
+  CircularProgress,
+  ToggleButton,
+  ToggleButtonGroup,
+} from "@mui/material";
 import { styled } from "@mui/material/styles";
 // import { useAppSelector } from "./IronmonMapUtils/state";
 
@@ -57,6 +63,10 @@ const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
     "&.Mui-selected": {
       backgroundColor: "#d66851",
     },
+    "&.MuiToggleButton-root:hover": {
+      backgroundColor: "rgba(255, 255, 255, 0.8)",
+      textDecoration: "underline",
+    },
     "&.Mui-selected:hover": {
       backgroundColor: "#d66851",
       textDecoration: "underline",
@@ -66,6 +76,8 @@ const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
     },
   },
 }));
+
+const frameCallbacks = 5;
 
 export const HGSSIronmonMap = () => {
   const [mapData, setMapData] = React.useState<MapInteractionCSSValue>({
@@ -85,35 +97,53 @@ export const HGSSIronmonMap = () => {
     portals: johtoPortals,
   });
 
+  const [showLoadingScreen, setShowLoadingScreen] = React.useState(false);
+
   const handleRegionChange = (
     event: React.MouseEvent<HTMLElement>,
     newRegion: "johto" | "kanto"
   ) => {
-    // Toggle trainers, itens, portals, images, image sizes
-    if (newRegion === "johto") {
-      // Johto
-      setRegionData({
-        name: "johto",
-        trainers: johtoTrainers,
-        items: johtoItems,
-        mapName: FullJohto,
-        mapHeight: 5893,
-        mapWidth: 13712,
-        portals: johtoPortals,
-      });
-    } else {
-      // Kanto
-      // setRegionData({
-      //   name: "kanto",
-      //   trainers: kantoTrainers,
-      //   items: ,
-      //   mapName: ,
-      //   mapHeight: ,
-      //   mapWidth: ,
-      // });
-    }
+    // Put up loading screen
+    setShowLoadingScreen(true);
 
-    // TODO: reset pan location of map?
+    setTimeout(() => {
+      // Toggle trainers, itens, portals, images, image sizes
+      if (newRegion === "johto") {
+        // Johto
+        setRegionData({
+          name: "johto",
+          trainers: johtoTrainers,
+          items: johtoItems,
+          mapName: FullJohto,
+          mapHeight: 5893,
+          mapWidth: 13712,
+          portals: johtoPortals,
+        });
+
+        // Reset map position
+        setMapData({
+          scale: 1,
+          translation: { x: -5000, y: -2000 },
+        });
+      } else {
+        // Kanto
+        setRegionData({
+          name: "kanto",
+          trainers: kantoTrainers,
+          items: kantoItems,
+          mapName: FullKanto,
+          mapHeight: 6994,
+          mapWidth: 9736,
+          portals: [], // TODO
+        });
+
+        // Reset map position
+        setMapData({
+          scale: 1,
+          translation: { x: -7000, y: -2000 },
+        });
+      }
+    }, 0);
   };
 
   // const showRoutes = useAppSelector((state) => state.settings).showRoutes;
@@ -133,8 +163,26 @@ export const HGSSIronmonMap = () => {
     [setMapData]
   );
 
+  const requestFrameMaybe = (callbackNum: number) => {
+    if (callbackNum === 0) {
+      setShowLoadingScreen(false);
+    } else {
+      requestAnimationFrame(() => {
+        requestFrameMaybe(callbackNum - 1);
+      });
+    }
+  };
+
+  const onImageLoad = (e: SyntheticEvent<HTMLImageElement>) => {
+    requestFrameMaybe(frameCallbacks);
+  };
+
   return (
     <div className="ironmon-map">
+      <div className={`loading-overlay ${showLoadingScreen ? "visible" : ""}`}>
+        <CircularProgress />
+        <div className="loading-label">Loading...</div>
+      </div>
       <ControlPanel />
       <StyledToggleButtonGroup
         className="region-selector"
@@ -143,9 +191,7 @@ export const HGSSIronmonMap = () => {
         onChange={handleRegionChange}
       >
         <ToggleButton value="johto">Johto</ToggleButton>
-        <ToggleButton value="kanto" disabled>
-          Kanto (Coming Soon)
-        </ToggleButton>
+        <ToggleButton value="kanto">Kanto</ToggleButton>
       </StyledToggleButtonGroup>
       <MapInteractionCSS
         value={mapData}
@@ -159,14 +205,13 @@ export const HGSSIronmonMap = () => {
           className="react-portal-container"
         ></div>
         <div id="tooltip-container" className="react-portal-container"></div>
-        {/* TODO: can we get the height and width from the image? Think "FullKanto" is just the string though */}
-        {/* if so, then put into variables */}
         <img
           width={regionData.mapWidth}
           height={regionData.mapHeight}
           src={regionData.mapName}
-          alt="Full Johto"
+          alt={regionData.name}
           className="pixelated full-map-img"
+          onLoad={onImageLoad}
         ></img>
         {/* <img
           width="7700"
