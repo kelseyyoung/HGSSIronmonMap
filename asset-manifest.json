@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/HGSSIronmonMap/static/css/main.40739317.css",
-    "main.js": "/HGSSIronmonMap/static/js/main.a2352934.js",
-    "static/media/FullJohto.webp": "/HGSSIronmonMap/static/media/FullJohto.3404c86d506eb6056173.webp",
+    "main.css": "/HGSSIronmonMap/static/css/main.5709a055.css",
+    "main.js": "/HGSSIronmonMap/static/js/main.29a18784.js",
+    "static/media/FullJohto.webp": "/HGSSIronmonMap/static/media/FullJohto.e268c3e1057e8b1cd289.webp",
+    "static/media/FullKanto.webp": "/HGSSIronmonMap/static/media/FullKanto.ee7aae84b100b6cd1174.webp",
     "static/media/MapPortalsDemo.gif": "/HGSSIronmonMap/static/media/MapPortalsDemo.dd8aa90ec2c2f21f9679.gif",
     "static/media/PortalClickDemo.gif": "/HGSSIronmonMap/static/media/PortalClickDemo.a893001de870427cc2bf.gif",
     "static/media/TrainerDemo.gif": "/HGSSIronmonMap/static/media/TrainerDemo.23bc8b2935461fb596ba.gif",
@@ -11,11 +12,11 @@
     "static/media/star.png": "/HGSSIronmonMap/static/media/star.8ee1f0879d78a0f695bf.png",
     "static/media/checkmark.png": "/HGSSIronmonMap/static/media/checkmark.d3a535b4929ab14365bf.png",
     "index.html": "/HGSSIronmonMap/index.html",
-    "main.40739317.css.map": "/HGSSIronmonMap/static/css/main.40739317.css.map",
-    "main.a2352934.js.map": "/HGSSIronmonMap/static/js/main.a2352934.js.map"
+    "main.5709a055.css.map": "/HGSSIronmonMap/static/css/main.5709a055.css.map",
+    "main.29a18784.js.map": "/HGSSIronmonMap/static/js/main.29a18784.js.map"
   },
   "entrypoints": [
-    "static/css/main.40739317.css",
-    "static/js/main.a2352934.js"
+    "static/css/main.5709a055.css",
+    "static/js/main.29a18784.js"
   ]
 }
