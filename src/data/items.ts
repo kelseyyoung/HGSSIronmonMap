@@ -536,6 +536,11 @@ export const items: ItemData[] = [
     y: 3417,
     type: ItemType.Hidden,
   },
+  {
+    x: 3454,
+    y: 3532,
+    type: ItemType.Hidden,
+  },
 
   // Lighthouse
   // 3F

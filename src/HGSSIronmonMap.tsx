@@ -31,6 +31,7 @@ import {
   ToggleButtonGroup,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import { kantoPortalGroups } from "./data/kantoPortals";
 // import { useAppSelector } from "./IronmonMapUtils/state";
 
 export interface MapInteractionCSSValue {
@@ -134,7 +135,7 @@ export const HGSSIronmonMap = () => {
           mapName: FullKanto,
           mapHeight: 6994,
           mapWidth: 9736,
-          portals: [], // TODO
+          portals: kantoPortalGroups,
         });
 
         // Reset map position

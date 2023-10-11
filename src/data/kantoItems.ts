@@ -37,6 +37,11 @@ export const kantoItems: ItemData[] = [
     y: 4096,
     type: ItemType.Normal,
   },
+  {
+    x: 7879,
+    y: 4375,
+    type: ItemType.Hidden,
+  },
 
   // Route 6
   {
