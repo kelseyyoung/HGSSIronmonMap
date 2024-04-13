@@ -205,6 +205,11 @@ export const kantoItems: ItemData[] = [
     y: 6559,
     type: ItemType.Hidden,
   },
+  {
+    x: 3377,
+    y: 6734,
+    type: ItemType.Normal,
+  },
 
   // Fuchsia City
   {

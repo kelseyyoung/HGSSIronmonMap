@@ -414,6 +414,11 @@ export const items: ItemData[] = [
     y: 4453,
     type: ItemType.Hidden,
   },
+  {
+    x: 4032,
+    y: 3863,
+    type: ItemType.Normal,
+  },
 
   // Pokeathalon
   {
@@ -502,6 +507,16 @@ export const items: ItemData[] = [
     y: 2078,
     type: ItemType.Normal,
   },
+  {
+    x: 3655,
+    y: 2187,
+    type: ItemType.Normal,
+  },
+  {
+    x: 3565,
+    y: 2056,
+    type: ItemType.Hidden,
+  },
 
   // Rt 39
   {
@@ -540,6 +555,11 @@ export const items: ItemData[] = [
     x: 3454,
     y: 3532,
     type: ItemType.Hidden,
+  },
+  {
+    x: 3844,
+    y: 3000,
+    type: ItemType.Normal,
   },
 
   // Lighthouse
@@ -633,7 +653,6 @@ export const items: ItemData[] = [
     y: 4476,
     type: ItemType.Hidden,
   },
-  // TODO: is there an item missing at the very far left of cliff cave
   {
     x: 608,
     y: 4257,
@@ -647,6 +666,11 @@ export const items: ItemData[] = [
   {
     x: 128,
     y: 3986,
+    type: ItemType.Normal,
+  },
+  {
+    x: 131,
+    y: 4549,
     type: ItemType.Normal,
   },
 
@@ -1224,6 +1248,11 @@ export const items: ItemData[] = [
     x: 9843,
     y: 1127,
     type: ItemType.Normal,
+  },
+  {
+    x: 9082,
+    y: 4061,
+    type: ItemType.Hidden,
   },
 
   // Dragon's Den
