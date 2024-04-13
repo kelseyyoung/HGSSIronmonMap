@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/HGSSIronmonMap/static/css/main.5709a055.css",
-    "main.js": "/HGSSIronmonMap/static/js/main.3fa3efa3.js",
-    "static/media/FullJohto.webp": "/HGSSIronmonMap/static/media/FullJohto.f628168141794daa70fb.webp",
-    "static/media/FullKanto.webp": "/HGSSIronmonMap/static/media/FullKanto.5c6c5331cf18688a9d93.webp",
+    "main.js": "/HGSSIronmonMap/static/js/main.30d372bc.js",
+    "static/media/FullJohto.webp": "/HGSSIronmonMap/static/media/FullJohto.e19858f2686f34e5bea1.webp",
+    "static/media/FullKanto.webp": "/HGSSIronmonMap/static/media/FullKanto.3741f0abc363b7a6e183.webp",
     "static/media/MapPortalsDemo.gif": "/HGSSIronmonMap/static/media/MapPortalsDemo.dd8aa90ec2c2f21f9679.gif",
     "static/media/PortalClickDemo.gif": "/HGSSIronmonMap/static/media/PortalClickDemo.a893001de870427cc2bf.gif",
     "static/media/TrainerDemo.gif": "/HGSSIronmonMap/static/media/TrainerDemo.23bc8b2935461fb596ba.gif",
@@ -13,10 +13,10 @@
     "static/media/checkmark.png": "/HGSSIronmonMap/static/media/checkmark.d3a535b4929ab14365bf.png",
     "index.html": "/HGSSIronmonMap/index.html",
     "main.5709a055.css.map": "/HGSSIronmonMap/static/css/main.5709a055.css.map",
-    "main.3fa3efa3.js.map": "/HGSSIronmonMap/static/js/main.3fa3efa3.js.map"
+    "main.30d372bc.js.map": "/HGSSIronmonMap/static/js/main.30d372bc.js.map"
   },
   "entrypoints": [
     "static/css/main.5709a055.css",
-    "static/js/main.3fa3efa3.js"
+    "static/js/main.30d372bc.js"
   ]
 }
