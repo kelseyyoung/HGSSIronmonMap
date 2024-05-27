@@ -559,7 +559,7 @@ export const items: ItemData[] = [
   {
     x: 3844,
     y: 3000,
-    type: ItemType.Normal,
+    type: ItemType.TM,
   },
 
   // Lighthouse

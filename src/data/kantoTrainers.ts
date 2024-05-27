@@ -1,4 +1,4 @@
-import { TrainerData } from "../IronmonMapUtils";
+import { TooltipPosition, TrainerData } from "../IronmonMapUtils";
 
 export const kantoTrainers: TrainerData[] = [
   // S.S. Aqua
@@ -98,6 +98,7 @@ export const kantoTrainers: TrainerData[] = [
     pokemonLevels: [68],
     x: 8452,
     y: 2950,
+    tooltipPosition: TooltipPosition.Right,
   },
   {
     name: "Biker Zeke",
@@ -105,6 +106,7 @@ export const kantoTrainers: TrainerData[] = [
     pokemonLevels: [65, 65],
     x: 8452,
     y: 2963,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Super Nerd Sam",
@@ -1081,6 +1083,7 @@ export const kantoTrainers: TrainerData[] = [
     pokemonLevels: [69],
     x: 5879,
     y: 6787,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Swimmer Harold",

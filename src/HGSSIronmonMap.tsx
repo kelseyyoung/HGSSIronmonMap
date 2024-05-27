@@ -1,6 +1,15 @@
 import React, { SyntheticEvent } from "react";
 import FullJohto from "./assets/FullJohto.webp";
 import FullKanto from "./assets/FullKanto.webp";
+import BellTowerRoute from "./assets/BellTowerRoute.webp";
+import WhirlIslandsRoute from "./assets/WhirlIslandsRoute.webp";
+import IceCaveRoute from "./assets/IceCaveRoute.webp";
+import DarkCaveRoute from "./assets/DarkCaveRoute.webp";
+import MtMortarRoute from "./assets/MtMortarRoute.webp";
+import VictoryRoadRoute from "./assets/VictoryRoadRoute.webp";
+import RockTunnelRoute from "./assets/RockTunnelRoute.webp";
+import CeruleanCaveRoute from "./assets/CeruleanCaveRoute.webp";
+import MtSilverRoute from "./assets/MtSilverRoute.webp";
 import "./HGSSIronmonMap.css";
 import { MapInteractionCSS } from "react-map-interaction";
 import { ControlPanel } from "./components";
@@ -32,7 +41,7 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { kantoPortalGroups } from "./data/kantoPortals";
-// import { useAppSelector } from "./IronmonMapUtils/state";
+import { useAppSelector } from "./IronmonMapUtils/state";
 
 export interface MapInteractionCSSValue {
   scale: number;
@@ -60,6 +69,7 @@ const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
   "& .MuiToggleButtonGroup-grouped": {
     backgroundColor: "rgba(255, 255, 255, 0.8)",
     color: "black",
+    marginLeft: "20px",
     fontWeight: "bold",
     "&.Mui-selected": {
       backgroundColor: "#d66851",
@@ -147,7 +157,7 @@ export const HGSSIronmonMap = () => {
     }, 0);
   };
 
-  // const showRoutes = useAppSelector((state) => state.settings).showRoutes;
+  const showRoutes = useAppSelector((state) => state.settings).showRoutes;
 
   const offsetMapCoords = React.useCallback(
     (x: number, y: number) => {
@@ -214,15 +224,150 @@ export const HGSSIronmonMap = () => {
           className="pixelated full-map-img"
           onLoad={onImageLoad}
         ></img>
-        {/* <img
-          width="7700"
-          height="6400"
-          alt="All Routes"
-          className={`full-map-img ${
-            showRoutes ? "routes-visible" : "routes-hidden"
+        <img
+          width="1800"
+          height="1200"
+          style={{
+            position: "absolute",
+            top: 690,
+            left: 3196,
+          }}
+          alt="Bell Tower Route"
+          className={`${
+            showRoutes && regionData.name === "johto"
+              ? "routes-visible"
+              : "routes-hidden"
           }`}
-          src={FullKantoPaths}
-        ></img> */}
+          src={BellTowerRoute}
+        ></img>
+        <img
+          width="1600"
+          height="1250"
+          style={{
+            position: "absolute",
+            top: 4600,
+            left: 1680,
+          }}
+          alt="Whirl Islands Route"
+          className={`${
+            showRoutes && regionData.name === "johto"
+              ? "routes-visible"
+              : "routes-hidden"
+          }`}
+          src={WhirlIslandsRoute}
+        ></img>
+        <img
+          width="1600"
+          height="1300"
+          style={{
+            position: "absolute",
+            top: 550,
+            left: 8150,
+          }}
+          alt="Ice Cave Route"
+          className={`${
+            showRoutes && regionData.name === "johto"
+              ? "routes-visible"
+              : "routes-hidden"
+          }`}
+          src={IceCaveRoute}
+        ></img>
+        <img
+          width="3500"
+          height="1400"
+          style={{
+            position: "absolute",
+            top: 2178,
+            left: 7416,
+          }}
+          alt="Dark Cave Route"
+          className={`${
+            showRoutes && regionData.name === "johto"
+              ? "routes-visible"
+              : "routes-hidden"
+          }`}
+          src={DarkCaveRoute}
+        ></img>
+        <img
+          width="2600"
+          height="1900"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 4500,
+          }}
+          alt="Mt Mortar Route"
+          className={`${
+            showRoutes && regionData.name === "johto"
+              ? "routes-visible"
+              : "routes-hidden"
+          }`}
+          src={MtMortarRoute}
+        ></img>
+        <img
+          width="1300"
+          height="2000"
+          style={{
+            position: "absolute",
+            top: 2738,
+            left: 12076,
+          }}
+          alt="Victory Road Route"
+          className={`${
+            showRoutes && regionData.name === "johto"
+              ? "routes-visible"
+              : "routes-hidden"
+          }`}
+          src={VictoryRoadRoute}
+        ></img>
+        <img
+          width="900"
+          height="1100"
+          style={{
+            position: "absolute",
+            top: 1639,
+            left: 8424,
+          }}
+          alt="Rock Tunnel Route"
+          className={`${
+            showRoutes && regionData.name === "kanto"
+              ? "routes-visible"
+              : "routes-hidden"
+          }`}
+          src={RockTunnelRoute}
+        ></img>
+        <img
+          width="3200"
+          height="700"
+          style={{
+            position: "absolute",
+            top: 192,
+            left: 4582,
+          }}
+          alt="Cerulean Cave Route"
+          className={`${
+            showRoutes && regionData.name === "kanto"
+              ? "routes-visible"
+              : "routes-hidden"
+          }`}
+          src={CeruleanCaveRoute}
+        ></img>
+        <img
+          width="2100"
+          height="2000"
+          style={{
+            position: "absolute",
+            top: 1440,
+            left: 0,
+          }}
+          alt="Mt Silver Route"
+          className={`${
+            showRoutes && regionData.name === "kanto"
+              ? "routes-visible"
+              : "routes-hidden"
+          }`}
+          src={MtSilverRoute}
+        ></img>
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"

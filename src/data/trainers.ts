@@ -1,4 +1,4 @@
-import { TrainerData } from "../IronmonMapUtils";
+import { TooltipPosition, TrainerData } from "../IronmonMapUtils";
 
 export const defaultTrainerHeight = 24;
 export const defaultTrainerWidth = 18;
@@ -136,6 +136,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [8, 8, 23, 8],
     x: 6260,
     y: 4609,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Fisherman Ralph",
@@ -311,7 +312,6 @@ export const trainers: TrainerData[] = [
     y: 5778,
   },
 
-
   // Goldenrod Tunnel
   {
     name: "PokéManiac Donald",
@@ -356,6 +356,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [20, 23],
     x: 4790,
     y: 3450,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   {
     name: "Picknicker Brooke",
@@ -930,6 +931,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [24, 26, 27],
     x: 7334,
     y: 2289,
+    tooltipPosition: TooltipPosition.Left,
   },
 
   // Statue 2
@@ -946,6 +948,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [24, 26, 27],
     x: 6918,
     y: 2288,
+    tooltipPosition: TooltipPosition.Bottom,
   },
 
   // Statue 3
@@ -955,6 +958,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [26, 29],
     x: 7335,
     y: 2350,
+    tooltipPosition: TooltipPosition.Right,
   },
   {
     name: "Team Rocket Grunt",
@@ -962,6 +966,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [24, 26, 27],
     x: 7335,
     y: 2373,
+    tooltipPosition: TooltipPosition.Bottom,
   },
 
   // Statue 4
@@ -978,6 +983,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [24, 26, 27],
     x: 7334,
     y: 2596,
+    tooltipPosition: TooltipPosition.Bottom,
   },
 
   // Statue 5
@@ -994,6 +1000,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [24, 26, 27],
     x: 6917,
     y: 2597,
+    tooltipPosition: TooltipPosition.Bottom,
   },
 
   {
@@ -1172,6 +1179,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [32, 32, 35, 36],
     x: 4496,
     y: 2910,
+    tooltipPosition: TooltipPosition.Bottom,
   },
   // After Basement
   {
@@ -1216,6 +1224,7 @@ export const trainers: TrainerData[] = [
     pokemonLevels: [48, 45, 45, 51, 51],
     x: 3863,
     y: 3602,
+    tooltipPosition: TooltipPosition.Right,
   },
   {
     name: "Team Rocket Grunt",
@@ -1445,8 +1454,8 @@ export const trainers: TrainerData[] = [
     name: "Black Belt Kiyo",
     numPokemon: 2,
     pokemonLevels: [51, 51],
-    x: 6352,
-    y: 259,
+    x: 5148,
+    y: 313,
   },
   {
     name: "Super Nerd Markus",
