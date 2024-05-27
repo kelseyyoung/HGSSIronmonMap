@@ -1,22 +1,31 @@
 {
   "files": {
-    "main.css": "/HGSSIronmonMap/static/css/main.5709a055.css",
-    "main.js": "/HGSSIronmonMap/static/js/main.30d372bc.js",
+    "main.css": "/HGSSIronmonMap/static/css/main.24b38607.css",
+    "main.js": "/HGSSIronmonMap/static/js/main.19b686ae.js",
     "static/media/FullJohto.webp": "/HGSSIronmonMap/static/media/FullJohto.e19858f2686f34e5bea1.webp",
     "static/media/FullKanto.webp": "/HGSSIronmonMap/static/media/FullKanto.3741f0abc363b7a6e183.webp",
     "static/media/MapPortalsDemo.gif": "/HGSSIronmonMap/static/media/MapPortalsDemo.dd8aa90ec2c2f21f9679.gif",
     "static/media/PortalClickDemo.gif": "/HGSSIronmonMap/static/media/PortalClickDemo.a893001de870427cc2bf.gif",
     "static/media/TrainerDemo.gif": "/HGSSIronmonMap/static/media/TrainerDemo.23bc8b2935461fb596ba.gif",
     "static/media/ItemDemo.gif": "/HGSSIronmonMap/static/media/ItemDemo.19763aeb8c75ea52d14d.gif",
+    "static/media/MtMortarRoute.webp": "/HGSSIronmonMap/static/media/MtMortarRoute.35aa3b6e68dbdeabd629.webp",
     "static/media/pokeball.png": "/HGSSIronmonMap/static/media/pokeball.a423f307223251ab7bff.png",
     "static/media/star.png": "/HGSSIronmonMap/static/media/star.8ee1f0879d78a0f695bf.png",
+    "static/media/MtSilverRoute.webp": "/HGSSIronmonMap/static/media/MtSilverRoute.66f1564f0fb30d3b308b.webp",
+    "static/media/CeruleanCaveRoute.webp": "/HGSSIronmonMap/static/media/CeruleanCaveRoute.1d31f0c9097e2afb8ec5.webp",
+    "static/media/DarkCaveRoute.webp": "/HGSSIronmonMap/static/media/DarkCaveRoute.96fc95d7bc254d7966ce.webp",
     "static/media/checkmark.png": "/HGSSIronmonMap/static/media/checkmark.d3a535b4929ab14365bf.png",
+    "static/media/BellTowerRoute.webp": "/HGSSIronmonMap/static/media/BellTowerRoute.9fdd76d659cf219e55aa.webp",
+    "static/media/VictoryRoadRoute.webp": "/HGSSIronmonMap/static/media/VictoryRoadRoute.efdfd9d0e468499223a5.webp",
+    "static/media/IceCaveRoute.webp": "/HGSSIronmonMap/static/media/IceCaveRoute.aa9fb511f5b1aef1b0b3.webp",
+    "static/media/WhirlIslandsRoute.webp": "/HGSSIronmonMap/static/media/WhirlIslandsRoute.f69903e10a7120d5fb81.webp",
+    "static/media/RockTunnelRoute.webp": "/HGSSIronmonMap/static/media/RockTunnelRoute.d93db343bd01868aa11e.webp",
     "index.html": "/HGSSIronmonMap/index.html",
-    "main.5709a055.css.map": "/HGSSIronmonMap/static/css/main.5709a055.css.map",
-    "main.30d372bc.js.map": "/HGSSIronmonMap/static/js/main.30d372bc.js.map"
+    "main.24b38607.css.map": "/HGSSIronmonMap/static/css/main.24b38607.css.map",
+    "main.19b686ae.js.map": "/HGSSIronmonMap/static/js/main.19b686ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.5709a055.css",
-    "static/js/main.30d372bc.js"
+    "static/css/main.24b38607.css",
+    "static/js/main.19b686ae.js"
   ]
 }
