@@ -1,4 +1,3 @@
 [submodule "src/IronmonMapUtils"]
 	path = src/IronmonMapUtils
-	url = https://github.com/kelseyyoung/IronmonMapUtils
-	branch = main
+	url = https://github.com/kelseyyoung/IronmonMapUtils.git
