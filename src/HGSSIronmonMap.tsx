@@ -10,6 +10,7 @@ import VictoryRoadRoute from "./assets/VictoryRoadRoute.webp";
 import RockTunnelRoute from "./assets/RockTunnelRoute.webp";
 import CeruleanCaveRoute from "./assets/CeruleanCaveRoute.webp";
 import MtSilverRoute from "./assets/MtSilverRoute.webp";
+import SeafoamIslandsRoute from "./assets/SeafoamIslandsRoute.webp";
 import "./HGSSIronmonMap.css";
 import { MapInteractionCSS } from "react-map-interaction";
 import { ControlPanel } from "./components";
@@ -367,6 +368,22 @@ export const HGSSIronmonMap = () => {
               : "routes-hidden"
           }`}
           src={MtSilverRoute}
+        ></img>
+        <img
+          width="864"
+          height="1961"
+          style={{
+            position: "absolute",
+            top: 4508,
+            left: 3654,
+          }}
+          alt="Seafoam Islands Route"
+          className={`${
+            showRoutes && regionData.name === "kanto"
+              ? "routes-visible"
+              : "routes-hidden"
+          }`}
+          src={SeafoamIslandsRoute}
         ></img>
         <svg
           version="1.1"

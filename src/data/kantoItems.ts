@@ -540,7 +540,7 @@ export const kantoItems: ItemData[] = [
   // B4F
   {
     x: 4329,
-    y: 4563,
+    y: 4653,
     type: ItemType.TM,
   },
   {
