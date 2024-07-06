@@ -258,12 +258,12 @@ export const HGSSIronmonMap = () => {
           src={WhirlIslandsRoute}
         ></img>
         <img
-          width="1600"
-          height="1300"
+          width="1533"
+          height="1145"
           style={{
             position: "absolute",
-            top: 550,
-            left: 8150,
+            top: 386,
+            left: 8320,
           }}
           alt="Ice Cave Route"
           className={`${
@@ -274,12 +274,12 @@ export const HGSSIronmonMap = () => {
           src={IceCaveRoute}
         ></img>
         <img
-          width="3500"
-          height="1400"
+          width="1100"
+          height="1630"
           style={{
             position: "absolute",
-            top: 2178,
-            left: 7416,
+            top: 2288,
+            left: 8039,
           }}
           alt="Dark Cave Route"
           className={`${

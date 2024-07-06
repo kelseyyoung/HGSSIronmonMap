@@ -5,7 +5,7 @@ export const defaultPortalSize = 24;
 export const portalGroups: MapPortalGroup[] = [
   {
     color: "#02cc1d",
-    area: "Bell Tower",
+    area: "Sprout Tower",
     portals: [
       // Entrance
       {
@@ -14,50 +14,50 @@ export const portalGroups: MapPortalGroup[] = [
           y: 2562,
         },
         portal2: {
-          x: 5632,
-          y: 2525,
+          x: 6016,
+          y: 2517,
         },
       },
 
       // Ladders
       {
         portal1: {
-          x: 5552,
-          y: 2355,
+          x: 5938,
+          y: 2350,
         },
         portal2: {
-          x: 5939,
-          y: 2348,
+          x: 6324,
+          y: 2339,
         },
       },
       {
         portal1: {
-          x: 6147,
-          y: 2286,
+          x: 6532,
+          y: 2280,
         },
         portal2: {
-          x: 5775,
-          y: 2283,
+          x: 6162,
+          y: 2276,
         },
       },
       {
         portal1: {
-          x: 5488,
-          y: 2368,
+          x: 5873,
+          y: 2361,
         },
         portal2: {
-          x: 5860,
-          y: 2374,
+          x: 6245,
+          y: 2364,
         },
       },
       {
         portal1: {
-          x: 6002,
-          y: 2505,
+          x: 6388,
+          y: 2497,
         },
         portal2: {
-          x: 6375,
-          y: 2508,
+          x: 6899,
+          y: 2498,
         },
       },
     ],
@@ -164,8 +164,8 @@ export const portalGroups: MapPortalGroup[] = [
           y: 4449,
         },
         portal2: {
-          x: 5297,
-          y: 4209,
+          x: 5295,
+          y: 3886,
         },
       },
     ],
@@ -182,16 +182,16 @@ export const portalGroups: MapPortalGroup[] = [
           y: 4520,
         },
         portal2: {
-          x: 5049,
-          y: 4106,
+          x: 5054,
+          y: 3787,
         },
       },
 
       // Exit
       {
         portal1: {
-          x: 5053,
-          y: 3713,
+          x: 5054,
+          y: 3391,
         },
         portal2: {
           x: 4449,
@@ -667,58 +667,58 @@ export const portalGroups: MapPortalGroup[] = [
           y: 2018,
         },
         portal2: {
-          x: 7463,
-          y: 2273,
+          x: 8296,
+          y: 1089,
         },
       },
       {
         portal1: {
-          x: 6781,
-          y: 2590,
+          x: 7602,
+          y: 1407,
         },
         portal2: {
-          x: 7537,
-          y: 2581,
+          x: 7604,
+          y: 1812,
         },
       },
       {
         portal1: {
-          x: 7536,
-          y: 2355,
+          x: 8298,
+          y: 1821,
         },
         portal2: {
-          x: 8300,
-          y: 2339,
+          x: 9063,
+          y: 1813,
         },
       },
       {
         portal1: {
-          x: 7536,
-          y: 2274,
+          x: 9062,
+          y: 1501,
         },
         portal2: {
-          x: 8300,
-          y: 2260,
+          x: 8299,
+          y: 1512,
         },
       },
       {
         portal1: {
-          x: 8227,
-          y: 2584,
+          x: 7602,
+          y: 1514,
         },
         portal2: {
-          x: 8988,
-          y: 2571,
+          x: 8372,
+          y: 1504,
         },
       },
       {
         portal1: {
-          x: 8223,
-          y: 2274,
+          x: 8372,
+          y: 1574,
         },
         portal2: {
-          x: 8988,
-          y: 2264,
+          x: 7602,
+          y: 1589,
         },
       },
     ],
@@ -734,24 +734,24 @@ export const portalGroups: MapPortalGroup[] = [
           y: 3209,
         },
         portal2: {
-          x: 7524,
-          y: 2988,
+          x: 8150,
+          y: 3437,
         },
       },
       {
         portal1: {
-          x: 7856,
-          y: 2711,
+          x: 8484,
+          y: 3162,
         },
         portal2: {
-          x: 9685,
-          y: 2974,
+          x: 8166,
+          y: 3024,
         },
       },
       {
         portal1: {
-          x: 10548,
-          y: 2297,
+          x: 9028,
+          y: 2346,
         },
         portal2: {
           x: 9236,
@@ -760,8 +760,8 @@ export const portalGroups: MapPortalGroup[] = [
       },
       {
         portal1: {
-          x: 8319,
-          y: 3387,
+          x: 8954,
+          y: 3844,
         },
         portal2: {
           x: 8884,
@@ -781,77 +781,77 @@ export const portalGroups: MapPortalGroup[] = [
           y: 1925,
         },
         portal2: {
-          x: 8394,
-          y: 1784,
+          x: 8454,
+          y: 1404,
         },
       },
       {
         portal1: {
-          x: 9098,
-          y: 1162,
+          x: 9156,
+          y: 775,
         },
         portal2: {
-          x: 9291,
-          y: 831,
+          x: 9356,
+          y: 846,
         },
       },
       {
         portal1: {
-          x: 9594,
-          y: 674,
+          x: 9660,
+          y: 691,
         },
         portal2: {
-          x: 8585,
-          y: 845,
+          x: 8655,
+          y: 464,
         },
       },
       {
         portal1: {
-          x: 8424,
-          y: 920,
+          x: 8495,
+          y: 540,
         },
         portal2: {
-          x: 9274,
-          y: 1351,
+          x: 9340,
+          y: 1366,
         },
       },
       {
         portal1: {
-          x: 9579,
-          y: 1362,
+          x: 9645,
+          y: 1380,
         },
         portal2: {
-          x: 8968,
-          y: 774,
+          x: 9039,
+          y: 392,
         },
       },
       {
         portal1: {
-          x: 8859,
-          y: 981,
+          x: 8927,
+          y: 600,
         },
         portal2: {
-          x: 9626,
-          y: 1069,
+          x: 9692,
+          y: 1084,
         },
       },
       {
         portal1: {
-          x: 9291,
-          y: 1091,
+          x: 9356,
+          y: 1108,
         },
         portal2: {
-          x: 9097,
-          y: 1324,
+          x: 9155,
+          y: 936,
         },
       },
       {
         portal1: {
-          x: 9096,
-          y: 1567,
+          x: 9157,
+          y: 1182,
         },
         portal2: {
-          x: 9987,
+          x: 9988,
           y: 1637,
         },
       },
@@ -859,42 +859,42 @@ export const portalGroups: MapPortalGroup[] = [
       // Holes
       {
         portal1: {
-          x: 9370,
-          y: 703,
+          x: 9437,
+          y: 718,
         },
         portal2: {
-          x: 8365,
-          y: 875,
+          x: 8433,
+          y: 494,
         },
       },
       {
         portal1: {
-          x: 8348,
-          y: 974,
+          x: 9421,
+          y: 815,
         },
         portal2: {
-          x: 9355,
-          y: 800,
+          x: 8416,
+          y: 591,
         },
       },
       {
         portal1: {
-          x: 9498,
-          y: 812,
+          x: 9564,
+          y: 827,
         },
         portal2: {
-          x: 8492,
-          y: 985,
+          x: 8561,
+          y: 604,
         },
       },
       {
         portal1: {
-          x: 8476,
-          y: 839,
+          x: 9548,
+          y: 682,
         },
         portal2: {
-          x: 9484,
-          y: 665,
+          x: 8544,
+          y: 456,
         },
       },
     ],
@@ -910,8 +910,8 @@ export const portalGroups: MapPortalGroup[] = [
           y: 1488,
         },
         portal2: {
-          x: 10172,
-          y: 757,
+          x: 10224,
+          y: 775,
         },
       },
     ],
@@ -1136,7 +1136,7 @@ export const portalGroups: MapPortalGroup[] = [
       {
         portal1: {
           x: 5414,
-          y: 4046,
+          y: 3721,
         },
         portal2: {
           x: 4010,
@@ -1159,8 +1159,8 @@ export const portalGroups: MapPortalGroup[] = [
           y: 3545,
         },
         portal2: {
-          x: 5386,
-          y: 4175,
+          x: 5385,
+          y: 3851,
         },
       },
     ],
@@ -1460,6 +1460,142 @@ export const portalGroups: MapPortalGroup[] = [
         portal2: {
           x: 5777,
           y: 457,
+        },
+      },
+    ],
+  },
+  {
+    color: "#ac21c4",
+    area: "Violet Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 6512,
+          y: 3031,
+        },
+        portal2: {
+          x: 7100,
+          y: 3036,
+        },
+      },
+    ],
+  },
+  {
+    color: "#66d11f",
+    area: "Azalea Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 5357,
+          y: 5720,
+        },
+        portal2: {
+          x: 4365,
+          y: 5853,
+        },
+      },
+    ],
+  },
+  {
+    color: "#bf17ae",
+    area: "Goldenrod Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 4755,
+          y: 4029,
+        },
+        portal2: {
+          x: 5126,
+          y: 4470,
+        },
+      },
+    ],
+  },
+  {
+    color: "#4a4635",
+    area: "Ecruteak Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 4915,
+          y: 2141,
+        },
+        portal2: {
+          x: 5692,
+          y: 2804,
+        },
+      },
+    ],
+  },
+  {
+    color: "#559ec2",
+    area: "Cianwood Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 1596,
+          y: 4375,
+        },
+        portal2: {
+          x: 1540,
+          y: 4954,
+        },
+      },
+    ],
+  },
+  {
+    color: "#4a5257",
+    area: "Olivine Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 3201,
+          y: 2836,
+        },
+        portal2: {
+          x: 3597,
+          y: 2714,
+        },
+      },
+    ],
+  },
+  {
+    color: "#4a1b1f",
+    area: "Mahogany Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 7267,
+          y: 2128,
+        },
+        portal2: {
+          x: 7397,
+          y: 2963,
+        },
+      },
+    ],
+  },
+  {
+    color: "#1a1616",
+    area: "Blackthorn Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 9526,
+          y: 1720,
+        },
+        portal2: {
+          x: 10262,
+          y: 2561,
         },
       },
     ],

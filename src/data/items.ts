@@ -106,27 +106,27 @@ export const items: ItemData[] = [
   // Sprout Tower
   // 1F
   {
-    x: 5778,
-    y: 2379,
+    x: 6164,
+    y: 2369,
     type: ItemType.Normal,
   },
 
   // 2F
   {
-    x: 5864,
-    y: 2290,
+    x: 6249,
+    y: 2281,
     type: ItemType.Normal,
   },
 
   // 3F
   {
-    x: 6318,
-    y: 2512,
+    x: 6840,
+    y: 2502,
     type: ItemType.Normal,
   },
   {
-    x: 6443,
-    y: 2282,
+    x: 6965,
+    y: 2273,
     type: ItemType.Normal,
   },
 
@@ -334,38 +334,38 @@ export const items: ItemData[] = [
 
   // Dept Store Basement
   {
-    x: 5337,
-    y: 4282,
+    x: 5333,
+    y: 3956,
     type: ItemType.Hidden,
   },
   {
-    x: 5226,
-    y: 4316,
+    x: 5223,
+    y: 3990,
     type: ItemType.Hidden,
   },
   {
-    x: 5400,
-    y: 4418,
+    x: 5397,
+    y: 4092,
     type: ItemType.Normal,
   },
   {
-    x: 5289,
-    y: 4431,
+    x: 5285,
+    y: 4105,
     type: ItemType.Normal,
   },
   {
-    x: 5449,
-    y: 4183,
+    x: 5445,
+    y: 3858,
     type: ItemType.Normal,
   },
   {
-    x: 5034,
-    y: 4253,
+    x: 5031,
+    y: 3928,
     type: ItemType.Hidden,
   },
   {
-    x: 5209,
-    y: 4195,
+    x: 5205,
+    y: 3869,
     type: ItemType.Normal,
   },
 
@@ -766,67 +766,67 @@ export const items: ItemData[] = [
 
   // B1F
   {
-    x: 7275,
-    y: 2507,
+    x: 8302,
+    y: 1189,
     type: ItemType.Normal,
   },
   {
-    x: 7467,
-    y: 2372,
+    x: 8110,
+    y: 1325,
     type: ItemType.Normal,
   },
   {
-    x: 7483,
-    y: 2430,
+    x: 8319,
+    y: 1247,
     type: ItemType.Hidden,
   },
   {
-    x: 7114,
-    y: 2579,
+    x: 7949,
+    y: 1396,
     type: ItemType.Normal,
   },
 
   // B2F
   {
-    x: 7717,
-    y: 2582,
+    x: 7791,
+    y: 1817,
     type: ItemType.Hidden,
   },
   {
-    x: 8164,
-    y: 2404,
+    x: 8239,
+    y: 1639,
     type: ItemType.Hidden,
   },
   {
-    x: 7588,
-    y: 2449,
+    x: 7662,
+    y: 1684,
     type: ItemType.TM,
   },
 
   // B3F
   {
-    x: 8947,
-    y: 2415,
+    x: 9020,
+    y: 1651,
     type: ItemType.Normal,
   },
   {
-    x: 8675,
-    y: 2277,
+    x: 8748,
+    y: 1512,
     type: ItemType.TM,
   },
   {
-    x: 8372,
-    y: 2521,
+    x: 8445,
+    y: 1756,
     type: ItemType.Normal,
   },
   {
-    x: 8338,
-    y: 2521,
+    x: 8412,
+    y: 1756,
     type: ItemType.Normal,
   },
   {
-    x: 8595,
-    y: 2448,
+    x: 8668,
+    y: 1683,
     type: ItemType.Normal,
   },
 
@@ -1080,58 +1080,58 @@ export const items: ItemData[] = [
 
   // Ice Path
   {
-    x: 8497,
-    y: 1300,
+    x: 8555,
+    y: 913,
     type: ItemType.Hidden,
   },
   {
-    x: 8992,
-    y: 1132,
+    x: 9051,
+    y: 746,
     type: ItemType.Hidden,
   },
   {
-    x: 8256,
-    y: 865,
+    x: 8324,
+    y: 482,
     type: ItemType.Normal,
   },
   {
-    x: 8592,
-    y: 1036,
+    x: 8660,
+    y: 653,
     type: ItemType.Hidden,
   },
   {
-    x: 8416,
-    y: 903,
+    x: 8485,
+    y: 520,
     type: ItemType.Normal,
   },
   {
-    x: 9392,
-    y: 1382,
+    x: 9458,
+    y: 1396,
     type: ItemType.Normal,
   },
   {
-    x: 9089,
-    y: 1013,
+    x: 9157,
+    y: 630,
     type: ItemType.TM,
   },
   {
-    x: 9409,
-    y: 1173,
+    x: 9474,
+    y: 1188,
     type: ItemType.Normal,
   },
   {
-    x: 9441,
-    y: 1157,
+    x: 9505,
+    y: 1171,
     type: ItemType.Hidden,
   },
   {
-    x: 9073,
-    y: 1257,
+    x: 9131,
+    y: 871,
     type: ItemType.Normal,
   },
   {
-    x: 9072,
-    y: 1513,
+    x: 9131,
+    y: 1126,
     type: ItemType.Normal,
   },
 
@@ -1139,65 +1139,65 @@ export const items: ItemData[] = [
 
   // Blackthorn Side
   {
-    x: 10364,
-    y: 2466,
+    x: 8842,
+    y: 2509,
     type: ItemType.Hidden,
   },
   {
-    x: 10268,
-    y: 2811,
+    x: 8747,
+    y: 2854,
     type: ItemType.Normal,
   },
   {
-    x: 9821,
-    y: 2883,
+    x: 8300,
+    y: 2926,
     type: ItemType.TM,
   },
   {
-    x: 9820,
-    y: 2366,
+    x: 8220,
+    y: 2960,
     type: ItemType.Hidden,
   },
   {
-    x: 9741,
-    y: 2916,
+    x: 8299,
+    y: 2410,
     type: ItemType.Hidden,
   },
 
   // Violet City Side
   {
-    x: 7641,
-    y: 2806,
+    x: 8267,
+    y: 3256,
     type: ItemType.Hidden,
   },
   {
-    x: 7608,
-    y: 2834,
+    x: 8235,
+    y: 3284,
     type: ItemType.Normal,
   },
   {
-    x: 7720,
-    y: 2982,
+    x: 8347,
+    y: 3432,
     type: ItemType.Normal,
   },
   {
-    x: 8265,
-    y: 2859,
+    x: 8891,
+    y: 3308,
     type: ItemType.Normal,
   },
   {
-    x: 8389,
-    y: 2990,
+    x: 9016,
+    y: 3440,
     type: ItemType.Hidden,
   },
   {
-    x: 8344,
-    y: 3225,
+    x: 8972,
+    y: 3674,
     type: ItemType.Normal,
   },
   {
-    x: 8184,
-    y: 3333,
+    x: 8811,
+    y: 3783,
     type: ItemType.Normal,
   },
 
@@ -1240,16 +1240,6 @@ export const items: ItemData[] = [
     type: ItemType.Normal,
   },
   {
-    x: 10244,
-    y: 1313,
-    type: ItemType.Hidden,
-  },
-  {
-    x: 9843,
-    y: 1127,
-    type: ItemType.Normal,
-  },
-  {
     x: 9082,
     y: 4061,
     type: ItemType.Hidden,
@@ -1257,23 +1247,33 @@ export const items: ItemData[] = [
 
   // Dragon's Den
   {
-    x: 10402,
-    y: 907,
+    x: 10455,
+    y: 926,
     type: ItemType.Normal,
   },
   {
-    x: 10531,
-    y: 1118,
+    x: 10584,
+    y: 1137,
     type: ItemType.Normal,
   },
   {
-    x: 9857,
-    y: 982,
+    x: 9896,
+    y: 1146,
+    type: ItemType.Normal,
+  },
+  {
+    x: 10007,
+    y: 865,
     type: ItemType.Hidden,
   },
   {
-    x: 9954,
-    y: 846,
+    x: 9911,
+    y: 1001,
+    type: ItemType.Hidden,
+  },
+  {
+    x: 10297,
+    y: 1333,
     type: ItemType.Hidden,
   },
 
