@@ -622,6 +622,202 @@ export const kantoPortalGroups: MapPortalGroup[] = [
     ],
   },
   {
+    color: "#8a169c",
+    area: "Fuschia Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 5770,
+          y: 5855,
+        },
+        portal2: {
+          x: 5507,
+          y: 6099,
+        },
+      },
+    ],
+  },
+  {
+    color: "#545254",
+    area: "Pewter Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 3404,
+          y: 1095,
+        },
+        portal2: {
+          x: 2876,
+          y: 1283,
+        },
+      },
+    ],
+  },
+  {
+    color: "#9e3813",
+    area: "Vermilion Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 7412,
+          y: 3991,
+        },
+        portal2: {
+          x: 7211,
+          y: 4073,
+        },
+      },
+    ],
+  },
+  {
+    color: "#117c91",
+    area: "Cerulean Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 7758,
+          y: 1222,
+        },
+        portal2: {
+          x: 8335,
+          y: 1115,
+        },
+      },
+    ],
+  },
+  {
+    color: "#0e8a24",
+    area: "Celadon Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 5901,
+          y: 3198,
+        },
+        portal2: {
+          x: 5633,
+          y: 3775,
+        },
+      },
+    ],
+  },
+  {
+    color: "#4c1278",
+    area: "Saffron Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 7941,
+          y: 2456,
+        },
+        portal2: {
+          x: 8052,
+          y: 2360,
+        },
+      },
+      {
+        portal1: {
+          x: 8097,
+          y: 2287,
+        },
+        portal2: {
+          x: 8257,
+          y: 2323,
+        },
+      },
+      {
+        portal1: {
+          x: 8162,
+          y: 2285,
+        },
+        portal2: {
+          x: 8257,
+          y: 2063,
+        },
+      },
+      {
+        portal1: {
+          x: 8258,
+          y: 2101,
+        },
+        portal2: {
+          x: 7843,
+          y: 2286,
+        },
+      },
+      {
+        portal1: {
+          x: 7938,
+          y: 2324,
+        },
+        portal2: {
+          x: 7938,
+          y: 2213,
+        },
+      },
+      {
+        portal1: {
+          x: 7842,
+          y: 2212,
+        },
+        portal2: {
+          x: 7938,
+          y: 2102,
+        },
+      },
+      {
+        portal1: {
+          x: 7842,
+          y: 2102,
+        },
+        portal2: {
+          x: 8098,
+          y: 2225,
+        },
+      },
+    ],
+  },
+  {
+    color: "#3d0904",
+    area: "Cinnabar Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 4366,
+          y: 6346,
+        },
+        portal2: {
+          x: 4722,
+          y: 6411,
+        },
+      },
+    ],
+  },
+  {
+    color: "#1b421a",
+    area: "Viridian Gym",
+    portals: [
+      // Entrance
+      {
+        portal1: {
+          x: 3372,
+          y: 3245,
+        },
+        portal2: {
+          x: 3649,
+          y: 3561,
+        },
+      },
+    ],
+  },
+  {
     color: "#bbc1c9",
     area: "Mt. Silver",
     portals: [

@@ -11,6 +11,7 @@ import RockTunnelRoute from "./assets/RockTunnelRoute.webp";
 import CeruleanCaveRoute from "./assets/CeruleanCaveRoute.webp";
 import MtSilverRoute from "./assets/MtSilverRoute.webp";
 import SeafoamIslandsRoute from "./assets/SeafoamIslandsRoute.webp";
+import ViridianGymRoute from "./assets/ViridianGymRoute.webp";
 import "./HGSSIronmonMap.css";
 import { MapInteractionCSS } from "react-map-interaction";
 import { ControlPanel } from "./components";
@@ -384,6 +385,22 @@ export const HGSSIronmonMap = () => {
               : "routes-hidden"
           }`}
           src={SeafoamIslandsRoute}
+        ></img>
+        <img
+          width="236"
+          height="621"
+          style={{
+            position: "absolute",
+            top: 2958,
+            left: 3541,
+          }}
+          alt="Viridian Gym Route"
+          className={`${
+            showRoutes && regionData.name === "kanto"
+              ? "routes-visible"
+              : "routes-hidden"
+          }`}
+          src={ViridianGymRoute}
         ></img>
         <svg
           version="1.1"
