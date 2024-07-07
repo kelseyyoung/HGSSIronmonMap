@@ -171,7 +171,7 @@ export const items: ItemData[] = [
   // 1F
   {
     x: 6587,
-    y: 3273,
+    y: 3723,
     type: ItemType.Normal,
   },
   {
@@ -728,6 +728,11 @@ export const items: ItemData[] = [
     x: 6585,
     y: 2137,
     type: ItemType.Hidden,
+  },
+  {
+    x: 6455,
+    y: 2067,
+    type: ItemType.Normal,
   },
 
   // Lake of Rage
