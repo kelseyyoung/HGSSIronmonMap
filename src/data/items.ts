@@ -735,6 +735,13 @@ export const items: ItemData[] = [
     type: ItemType.Normal,
   },
 
+  // Rt 43
+  {
+    x: 7418,
+    y: 1588,
+    type: ItemType.Normal,
+  },
+
   // Lake of Rage
   {
     x: 7080,
