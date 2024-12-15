@@ -697,6 +697,16 @@ export const kantoItems: ItemData[] = [
     y: 3471,
     type: ItemType.Hidden,
   },
+  {
+    x: 1041,
+    y: 3502,
+    type: ItemType.TM,
+  },
+  {
+    x: 129,
+    y: 3657,
+    type: ItemType.Normal,
+  },
 
   // Mt. Silver
   // 1F
