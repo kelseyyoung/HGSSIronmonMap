@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/HGSSIronmonMap/static/css/main.bf289334.css",
-    "main.js": "/HGSSIronmonMap/static/js/main.cdd461c9.js",
+    "main.js": "/HGSSIronmonMap/static/js/main.574bb4c2.js",
     "static/media/FullJohto.webp": "/HGSSIronmonMap/static/media/FullJohto.6c7a0cf859f3400fa5d5.webp",
     "static/media/FullKanto.webp": "/HGSSIronmonMap/static/media/FullKanto.c35a99a5b450c3ecc831.webp",
     "static/media/MapPortalsDemo.gif": "/HGSSIronmonMap/static/media/MapPortalsDemo.dd8aa90ec2c2f21f9679.gif",
@@ -24,10 +24,10 @@
     "static/media/ViridianGymRoute.webp": "/HGSSIronmonMap/static/media/ViridianGymRoute.09270edd0279a5b358a3.webp",
     "index.html": "/HGSSIronmonMap/index.html",
     "main.bf289334.css.map": "/HGSSIronmonMap/static/css/main.bf289334.css.map",
-    "main.cdd461c9.js.map": "/HGSSIronmonMap/static/js/main.cdd461c9.js.map"
+    "main.574bb4c2.js.map": "/HGSSIronmonMap/static/js/main.574bb4c2.js.map"
   },
   "entrypoints": [
     "static/css/main.bf289334.css",
-    "static/js/main.cdd461c9.js"
+    "static/js/main.574bb4c2.js"
   ]
 }
