@@ -749,15 +749,15 @@ export const trainers: TrainerData[] = [
     name: "Swimmer Kara",
     numPokemon: 2,
     pokemonLevels: [30, 30],
-    x: 2422,
-    y: 4139,
+    x: 2516,
+    y: 4385,
   },
   {
     name: "Swimmer Wendy",
     numPokemon: 2,
     pokemonLevels: [32, 32],
-    x: 2516,
-    y: 4385,
+    x: 2422,
+    y: 4139,
   },
   {
     name: "Swimmer Ronald",
@@ -1306,7 +1306,7 @@ export const trainers: TrainerData[] = [
     numPokemon: 2,
     pokemonLevels: [42, 42],
     x: 8121,
-    y: 21370,
+    y: 2137,
   },
   {
     name: "Ace Trainer Cybil",
