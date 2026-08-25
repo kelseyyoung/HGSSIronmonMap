@@ -14,7 +14,7 @@ import SeafoamIslandsRoute from "./assets/SeafoamIslandsRoute.webp";
 import ViridianGymRoute from "./assets/ViridianGymRoute.webp";
 import "./HGSSIronmonMap.css";
 import { MapInteractionCSS } from "react-map-interaction";
-import { ControlPanel } from "./components";
+import { ControlPanel, TiledMap } from "./components";
 import {
   items as johtoItems,
   trainers as johtoTrainers,
@@ -35,6 +35,9 @@ import {
   MapPortalGroup,
   Trainer,
   TrainerData,
+  computeVisibleBounds,
+  isBoxVisible,
+  useViewportSize,
 } from "./IronmonMapUtils";
 import {
   CircularProgress,
@@ -92,6 +95,11 @@ const StyledToggleButtonGroup = styled(ToggleButtonGroup)(({ theme }) => ({
 
 const frameCallbacks = 5;
 
+// Extra content-space padding around the viewport when culling SVG overlay
+// entities, so markers and their tooltips near the edge don't pop in/out while
+// panning. Sized comfortably larger than any single entity + tooltip.
+const VIRTUALIZATION_MARGIN = 300;
+
 export const HGSSIronmonMap = () => {
   const [mapData, setMapData] = React.useState<MapInteractionCSSValue>({
     scale: 1,
@@ -111,6 +119,15 @@ export const HGSSIronmonMap = () => {
   });
 
   const [showLoadingScreen, setShowLoadingScreen] = React.useState(false);
+
+  // Tiled rendering is an opt-in performance mode (toggled in the Control
+  // Panel). Off = original single-image behavior.
+  const [useTiledMap, setUseTiledMap] = React.useState(false);
+
+  // Overlay virtualization is an HGSS-only performance mode: when on, only
+  // trainers/items/portals intersecting the viewport are rendered. Toggled in
+  // the Control Panel alongside the tiled map.
+  const [virtualizeOverlay, setVirtualizeOverlay] = React.useState(false);
 
   const handleRegionChange = (
     event: React.MouseEvent<HTMLElement>,
@@ -159,7 +176,23 @@ export const HGSSIronmonMap = () => {
     }, 0);
   };
 
-  const showRoutes = useAppSelector((state) => state.settings).showRoutes;
+  const { showRoutes } = useAppSelector((state) => state.settings);
+
+  // Virtualize the SVG overlay: when enabled, only render trainers/items/portals
+  // whose bounding box intersects the current viewport (plus a margin). Hundreds
+  // of entities per region otherwise sit in the DOM even when zoomed/panned far
+  // away from them. Opt-in via the Control Panel's Performance section.
+  const viewport = useViewportSize();
+  const visibleBounds = React.useMemo(
+    () =>
+      computeVisibleBounds(
+        mapData.translation,
+        mapData.scale,
+        viewport,
+        VIRTUALIZATION_MARGIN
+      ),
+    [mapData.translation, mapData.scale, viewport]
+  );
 
   const offsetMapCoords = React.useCallback(
     (x: number, y: number) => {
@@ -196,7 +229,11 @@ export const HGSSIronmonMap = () => {
         <CircularProgress />
         <div className="loading-label">Loading...</div>
       </div>
-      <ControlPanel />
+      <ControlPanel
+        useTiledMap={useTiledMap}
+        onToggleTiledMap={setUseTiledMap}
+        onToggleVirtualizeOverlay={setVirtualizeOverlay}
+      />
       <StyledToggleButtonGroup
         className="region-selector"
         exclusive
@@ -218,14 +255,25 @@ export const HGSSIronmonMap = () => {
           className="react-portal-container"
         ></div>
         <div id="tooltip-container" className="react-portal-container"></div>
-        <img
-          width={regionData.mapWidth}
-          height={regionData.mapHeight}
-          src={regionData.mapName}
-          alt={regionData.name}
-          className="pixelated full-map-img"
-          onLoad={onImageLoad}
-        ></img>
+        {useTiledMap ? (
+          <TiledMap
+            region={regionData.name}
+            mapWidth={regionData.mapWidth}
+            mapHeight={regionData.mapHeight}
+            scale={mapData.scale}
+            translation={mapData.translation}
+            onOverviewLoad={onImageLoad}
+          />
+        ) : (
+          <img
+            width={regionData.mapWidth}
+            height={regionData.mapHeight}
+            src={regionData.mapName}
+            alt={regionData.name}
+            className="pixelated full-map-img"
+            onLoad={onImageLoad}
+          ></img>
+        )}
         <img
           width="1800"
           height="1200"
@@ -411,6 +459,18 @@ export const HGSSIronmonMap = () => {
           className="svg-container"
         >
           {regionData.trainers.map((trainer, index) => {
+            if (
+              virtualizeOverlay &&
+              !isBoxVisible(
+                trainer.x,
+                trainer.y,
+                defaultTrainerWidth,
+                defaultTrainerHeight,
+                visibleBounds
+              )
+            ) {
+              return null;
+            }
             return (
               <Trainer
                 key={trainer.name.split(" ").join("") + "-" + index}
@@ -421,6 +481,18 @@ export const HGSSIronmonMap = () => {
             );
           })}
           {regionData.items.map((item, index) => {
+            if (
+              virtualizeOverlay &&
+              !isBoxVisible(
+                item.x,
+                item.y,
+                defaultItemWidth,
+                defaultItemHeight,
+                visibleBounds
+              )
+            ) {
+              return null;
+            }
             return (
               <Item
                 key={"item-" + index}
@@ -431,17 +503,39 @@ export const HGSSIronmonMap = () => {
             );
           })}
           {regionData.portals.map((portalGroup) => {
-            return portalGroup.portals.map((portal, portalIndex) => (
-              <MapPortal
-                key={"portal-" + portalIndex}
-                index={portalIndex + 1}
-                scale={mapData.scale}
-                offsetMapCoords={offsetMapCoords}
-                color={portalGroup.color}
-                size={defaultPortalSize}
-                {...portal}
-              />
-            ));
+            return portalGroup.portals.map((portal, portalIndex) => {
+              // Keep the pair (and its connecting line) if either endpoint is
+              // on-screen.
+              const visible =
+                isBoxVisible(
+                  portal.portal1.x,
+                  portal.portal1.y,
+                  defaultPortalSize,
+                  defaultPortalSize,
+                  visibleBounds
+                ) ||
+                isBoxVisible(
+                  portal.portal2.x,
+                  portal.portal2.y,
+                  defaultPortalSize,
+                  defaultPortalSize,
+                  visibleBounds
+                );
+              if (virtualizeOverlay && !visible) {
+                return null;
+              }
+              return (
+                <MapPortal
+                  key={"portal-" + portalIndex}
+                  index={portalIndex + 1}
+                  scale={mapData.scale}
+                  offsetMapCoords={offsetMapCoords}
+                  color={portalGroup.color}
+                  size={defaultPortalSize}
+                  {...portal}
+                />
+              );
+            });
           })}
         </svg>
       </MapInteractionCSS>

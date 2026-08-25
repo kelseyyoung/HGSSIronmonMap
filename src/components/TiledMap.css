@@ -1,0 +1,20 @@
+.tiled-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tiled-map-overview {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tiled-map-tile {
+  position: absolute;
+}
+
+.tiled-map-overview.pixelated,
+.tiled-map-tile.pixelated {
+  image-rendering: pixelated;
+}
