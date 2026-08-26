@@ -8,17 +8,6 @@
   width: 100%;
 }
 
-/* Promote react-map-interaction's transformed content to its own GPU
-   compositor layer. react-map-interaction renders an inner `overflow: hidden`
-   container whose single child carries the translate/scale transform; that
-   child is the element we want on its own layer. Doing so lets zoom scaling be
-   composited on the GPU instead of repainting the page each frame, which keeps
-   it from starving other GPU consumers (e.g. video playback). */
-.map-viewport > div > div {
-  will-change: transform;
-  backface-visibility: hidden;
-}
-
 .react-portal-container {
   position: absolute;
   top: 0;
