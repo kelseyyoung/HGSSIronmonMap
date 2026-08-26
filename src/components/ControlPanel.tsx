@@ -41,19 +41,6 @@ const ControlPanelSubtitle = styled(FormLabel)<FormLabelProps>(({ theme }) => ({
   color: theme.palette.text.primary,
 }));
 
-const BetaTag = styled("span")(({ theme }) => ({
-  marginLeft: theme.spacing(0.75),
-  padding: "1px 6px",
-  borderRadius: "4px",
-  fontSize: "0.65rem",
-  fontWeight: "bold",
-  textTransform: "uppercase",
-  letterSpacing: "0.05em",
-  color: theme.palette.warning.contrastText,
-  backgroundColor: theme.palette.action.active,
-  verticalAlign: "middle",
-}));
-
 const ControlPanelCheckbox = styled(Checkbox)<CheckboxProps>(() => ({
   padding: "4px 9px",
 }));
@@ -75,17 +62,7 @@ const ControlPanelAccordion = styled(Accordion)<AccordionProps>(() => ({
   },
 }));
 
-export interface ControlPanelProps {
-  useTiledMap: boolean;
-  onToggleTiledMap: (value: boolean) => void;
-  onToggleVirtualizeOverlay: (value: boolean) => void;
-}
-
-export const ControlPanel = ({
-  useTiledMap,
-  onToggleTiledMap,
-  onToggleVirtualizeOverlay,
-}: ControlPanelProps) => {
+export const ControlPanel = () => {
   const {
     showTrainerData,
     highlightItems,
@@ -288,26 +265,6 @@ export const ControlPanel = ({
                   />
                 }
                 label="Show Routes"
-              />
-            </FormGroup>
-            <ControlPanelSubtitle>
-              Performance
-              <BetaTag>Beta</BetaTag>
-            </ControlPanelSubtitle>
-            <FormGroup>
-              <FormControlLabel
-                control={
-                  <ControlPanelCheckbox
-                    checked={useTiledMap}
-                    onChange={() => {
-                      const nextValue = !useTiledMap;
-                      onToggleTiledMap(nextValue);
-                      onToggleVirtualizeOverlay(nextValue);
-                    }}
-                    size="small"
-                  />
-                }
-                label="Enable Improvements"
               />
             </FormGroup>
             <hr />
