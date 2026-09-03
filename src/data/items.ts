@@ -85,7 +85,7 @@ export const items: ItemData[] = [
   {
     x: 5748,
     y: 3311,
-    type: ItemType.Hidden,
+    type: ItemType.Normal,
   },
   {
     x: 5583,
