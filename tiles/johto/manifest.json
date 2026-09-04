@@ -3,5 +3,15 @@
   "height": 5893,
   "tileSize": 1024,
   "cols": 14,
-  "rows": 6
+  "rows": 6,
+  "settings": {
+    "tileSize": 1024,
+    "overviewMaxDim": 2048,
+    "tileWebp": {
+      "quality": 90
+    },
+    "overviewWebp": {
+      "quality": 90
+    }
+  }
 }
